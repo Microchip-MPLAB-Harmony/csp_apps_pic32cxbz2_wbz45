@@ -1,19 +1,19 @@
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# DMAC USART echo
+# FREQM measurement
 
-This example application demonstrates USART transfer with DMA to receive 10 bytes and echo back the received bytes.
+This example application demonstrates how to use the FREQM peripheral to measure the frequency of the internal RC Oscillator.
 
 ## Description
 
-This application demonstrates USART transfer with DMA using SERCOM peripheral configured in USART mode. One DMA channel is used to receive 10 bytes of data from the USART and another DMA channel is used to echo back the received bytes.
+The Frequency Meter (FREQM) can be used to accurately measure the frequency of a clock by comparing it to a known reference clock. The FREQM counts the number of periods of the measured clock with respect to the reference clock. This example application shows how to measure the cpu frequency using the 32-kHz Crystal oscillator as the reference clock.
 
 ## Downloading and building the application
 
 To clone or download this application from Github, go to the [main page of this repository](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32cx_bz24_bz25) and then click **Clone** button to clone this repository or download as zip file.
 This content can also be downloaded using content manager by following these [instructions](https://github.com/Microchip-MPLAB-Harmony/contentmanager/wiki).
 
-Path of the application within the repository is **apps/dmac/dmac_usart_echo/firmware** .
+Path of the application within the repository is **apps/freqm/freqm_measure_clock_freq/firmware** .
 
 To build the application, refer to the following table and open the project using its IDE.
 
@@ -45,16 +45,8 @@ Connect the Debug USB port on the board to the computer using a micro USB cable
     - Stop : 1 Bit
     - Flow Control : None
 3. Build and Program the application using its IDE
-4. The console displays the following message
+4. Observe output message in console as follows:
 
-    ![output](images/output_dmac_usart_echo.png)
+    ![output](images/output_freqm_measure_clock_freq.png)
 
-5. Type 10 characters in the console
-6. Entered 10 characters will be echoed back and the LED is toggled
-
-Refer below table for LED name
-
-| Board | LED Name |
-|-----|-----|
-|[PIC32CX WBZ451 Curiosity Board](https://www.microchip.com/developmenttools/ProductDetails/)|Green LED|
-
+    *Note that the measured clock frequency is approximate. The actual frequency may vary because of measurement error*
