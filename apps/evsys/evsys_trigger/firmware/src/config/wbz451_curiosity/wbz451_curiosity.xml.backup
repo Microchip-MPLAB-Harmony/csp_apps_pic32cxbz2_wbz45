@@ -1,0 +1,1071 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration>
+  <Components>
+    <UniqueComponent dnOrder="0" id="ccl">
+      <Symbols dnOrder="0">
+        <Hex dnOrder="0" id="CCL_CTRL_REGVALUE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="ccl" value="2"/>
+          </Values>
+        </Hex>
+        <Boolean dnOrder="1" id="CCL_ENABLE">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="true"/>
+          </Values>
+        </Boolean>
+        <Hex dnOrder="2" id="CCL_LUTCTRL_REGVALUE0">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="ccl" value="18875266"/>
+          </Values>
+        </Hex>
+        <Hex dnOrder="3" id="CCL_LUTCTRL_REGVALUE1">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="ccl" value="0"/>
+          </Values>
+        </Hex>
+        <KeyValueSet dnOrder="4" id="CTRL0__ENABLE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="ccl" value="1"/>
+          </Values>
+        </KeyValueSet>
+        <KeyValueSet dnOrder="5" id="LUTCTRL0__EDGESEL">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+          <Values dnOrder="1">
+            <User dnOrder="0" value="1"/>
+          </Values>
+        </KeyValueSet>
+        <Boolean dnOrder="6" id="LUTCTRL0__ENABLE">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+          <Values dnOrder="1">
+            <User dnOrder="0" value="true"/>
+          </Values>
+        </Boolean>
+        <KeyValueSet dnOrder="7" id="LUTCTRL0__FILTSEL">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </KeyValueSet>
+        <KeyValueSet dnOrder="8" id="LUTCTRL0__INSEL0">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+          <Values dnOrder="1">
+            <User dnOrder="0" value="3"/>
+          </Values>
+        </KeyValueSet>
+        <KeyValueSet dnOrder="9" id="LUTCTRL0__INSEL1">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </KeyValueSet>
+        <KeyValueSet dnOrder="10" id="LUTCTRL0__INSEL2">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </KeyValueSet>
+        <KeyValueSet dnOrder="11" id="LUTCTRL0__INVEI">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </KeyValueSet>
+        <KeyValueSet dnOrder="12" id="LUTCTRL0__LUTEI">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+          <Values dnOrder="1">
+            <User dnOrder="0" value="1"/>
+          </Values>
+        </KeyValueSet>
+        <KeyValueSet dnOrder="13" id="LUTCTRL0__LUTEO">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </KeyValueSet>
+        <Hex dnOrder="14" id="LUTCTRL0__TRUTH">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+          <Values dnOrder="1">
+            <User dnOrder="0" value="1"/>
+          </Values>
+        </Hex>
+        <KeyValueSet dnOrder="15" id="LUTCTRL1__EDGESEL">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">false</Value>
+            </Boolean>
+          </Attributes>
+        </KeyValueSet>
+        <Boolean dnOrder="16" id="LUTCTRL1__ENABLE">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </Boolean>
+        <KeyValueSet dnOrder="17" id="LUTCTRL1__FILTSEL">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">false</Value>
+            </Boolean>
+          </Attributes>
+        </KeyValueSet>
+        <KeyValueSet dnOrder="18" id="LUTCTRL1__INSEL0">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">false</Value>
+            </Boolean>
+          </Attributes>
+        </KeyValueSet>
+        <KeyValueSet dnOrder="19" id="LUTCTRL1__INSEL1">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">false</Value>
+            </Boolean>
+          </Attributes>
+        </KeyValueSet>
+        <KeyValueSet dnOrder="20" id="LUTCTRL1__INSEL2">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">false</Value>
+            </Boolean>
+          </Attributes>
+        </KeyValueSet>
+        <KeyValueSet dnOrder="21" id="LUTCTRL1__INVEI">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">false</Value>
+            </Boolean>
+          </Attributes>
+        </KeyValueSet>
+        <KeyValueSet dnOrder="22" id="LUTCTRL1__LUTEI">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">false</Value>
+            </Boolean>
+          </Attributes>
+        </KeyValueSet>
+        <KeyValueSet dnOrder="23" id="LUTCTRL1__LUTEO">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">false</Value>
+            </Boolean>
+          </Attributes>
+        </KeyValueSet>
+        <Hex dnOrder="24" id="LUTCTRL1__TRUTH">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">false</Value>
+            </Boolean>
+          </Attributes>
+        </Hex>
+        <KeyValueSet dnOrder="25" id="SEQCTRL0__SEQSEL">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </KeyValueSet>
+        <KeyValueSet dnOrder="26" id="SEQCTRL1__SEQSEL">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </KeyValueSet>
+      </Symbols>
+    </UniqueComponent>
+    <UniqueComponent dnOrder="1" id="cmsis"/>
+    <UniqueComponent dnOrder="2" id="core">
+      <Symbols dnOrder="0">
+        <String dnOrder="0" id="BSP_PIN_10_FUNCTION_TYPE">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="CCL_OUT0"/>
+          </Values>
+        </String>
+        <String dnOrder="1" id="BSP_PIN_10_MODE">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="DIGITAL"/>
+          </Values>
+        </String>
+        <String dnOrder="2" id="BSP_PIN_11_MODE">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="DIGITAL"/>
+          </Values>
+        </String>
+        <String dnOrder="3" id="BSP_PIN_12_MODE">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="DIGITAL"/>
+          </Values>
+        </String>
+        <String dnOrder="4" id="BSP_PIN_13_MODE">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="DIGITAL"/>
+          </Values>
+        </String>
+        <String dnOrder="5" id="BSP_PIN_14_MODE">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="DIGITAL"/>
+          </Values>
+        </String>
+        <String dnOrder="6" id="BSP_PIN_15_MODE">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="DIGITAL"/>
+          </Values>
+        </String>
+        <String dnOrder="7" id="BSP_PIN_16_MODE">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="DIGITAL"/>
+          </Values>
+        </String>
+        <String dnOrder="8" id="BSP_PIN_17_MODE">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="DIGITAL"/>
+          </Values>
+        </String>
+        <String dnOrder="9" id="BSP_PIN_34_FUNCTION_TYPE">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="EXTINT0"/>
+          </Values>
+        </String>
+        <String dnOrder="10" id="BSP_PIN_34_MODE">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="DIGITAL"/>
+          </Values>
+        </String>
+        <String dnOrder="11" id="BSP_PIN_40_MODE">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="DIGITAL"/>
+          </Values>
+        </String>
+        <String dnOrder="12" id="BSP_PIN_41_MODE">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="DIGITAL"/>
+          </Values>
+        </String>
+        <String dnOrder="13" id="BSP_PIN_42_MODE">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="DIGITAL"/>
+          </Values>
+        </String>
+        <String dnOrder="14" id="BSP_PIN_43_MODE">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="DIGITAL"/>
+          </Values>
+        </String>
+        <String dnOrder="15" id="BSP_PIN_44_MODE">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="DIGITAL"/>
+          </Values>
+        </String>
+        <String dnOrder="16" id="BSP_PIN_47_MODE">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="DIGITAL"/>
+          </Values>
+        </String>
+        <String dnOrder="17" id="BSP_PIN_4_MODE">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="DIGITAL"/>
+          </Values>
+        </String>
+        <String dnOrder="18" id="BSP_PIN_5_MODE">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="DIGITAL"/>
+          </Values>
+        </String>
+        <String dnOrder="19" id="BSP_PIN_6_FUNCTION_TYPE">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="CCLIN0"/>
+          </Values>
+        </String>
+        <String dnOrder="20" id="BSP_PIN_6_MODE">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="DIGITAL"/>
+          </Values>
+        </String>
+        <String dnOrder="21" id="BSP_PIN_7_MODE">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="DIGITAL"/>
+          </Values>
+        </String>
+        <String dnOrder="22" id="BSP_PIN_9_MODE">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="DIGITAL"/>
+          </Values>
+        </String>
+        <Hex dnOrder="23" id="CFGPCLKGEN1_REG">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="core" value="9"/>
+          </Values>
+        </Hex>
+        <Hex dnOrder="24" id="CFGPCLKGEN2_REG">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="core" value="9"/>
+          </Values>
+        </Hex>
+        <KeyValueSet dnOrder="25" id="COMPILER_CHOICE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="core" value="0"/>
+          </Values>
+        </KeyValueSet>
+        <Combo dnOrder="26" id="CONFIG_POSCMOD">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="core" value="HS"/>
+          </Values>
+        </Combo>
+        <KeyValueSet dnOrder="27" id="DEVICE_TCM_SIZE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="core" value="0"/>
+          </Values>
+        </KeyValueSet>
+        <Boolean dnOrder="28" id="EIC_CLOCK_ENABLE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="eic" value="true"/>
+          </Values>
+        </Boolean>
+        <Integer dnOrder="29" id="EIC_CLOCK_FREQUENCY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="core" value="64000000"/>
+          </Values>
+        </Integer>
+        <Boolean dnOrder="30" id="EIC_INTERRUPT_ENABLE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="eic" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="31" id="EIC_INTERRUPT_ENABLE_UPDATE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="core" value="true"/>
+          </Values>
+        </Boolean>
+        <String dnOrder="32" id="EIC_INTERRUPT_HANDLER">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="eic" value="EIC_Handler"/>
+          </Values>
+        </String>
+        <Boolean dnOrder="33" id="EIC_INTERRUPT_HANDLER_LOCK">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="eic" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="34" id="EVSYS_0_CLOCK_ENABLE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="true"/>
+          </Values>
+        </Boolean>
+        <Integer dnOrder="35" id="EVSYS_0_CLOCK_FREQUENCY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="core" value="64000000"/>
+          </Values>
+        </Integer>
+        <Boolean dnOrder="36" id="GCLK_ID_0_CHEN">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="core" value="true"/>
+          </Values>
+        </Boolean>
+        <Integer dnOrder="37" id="GCLK_ID_0_FREQ">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="core" value="64000000"/>
+          </Values>
+        </Integer>
+        <KeyValueSet dnOrder="38" id="GCLK_ID_0_GENSEL">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="core" value="1"/>
+          </Values>
+        </KeyValueSet>
+        <Boolean dnOrder="39" id="GCLK_ID_8_CHEN">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="core" value="true"/>
+          </Values>
+        </Boolean>
+        <Integer dnOrder="40" id="GCLK_ID_8_FREQ">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="core" value="64000000"/>
+          </Values>
+        </Integer>
+        <KeyValueSet dnOrder="41" id="GCLK_ID_8_GENSEL">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="core" value="1"/>
+          </Values>
+        </KeyValueSet>
+        <String dnOrder="42" id="KEIL_STACK_HEAP_SIZE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="core" value="0x1200"/>
+          </Values>
+        </String>
+        <Boolean dnOrder="43" id="NVIC_1_0_ENABLE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="core" value="false"/>
+          </Values>
+        </Boolean>
+        <String dnOrder="44" id="NVIC_1_0_HANDLER">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="core" value="EIC_Handler"/>
+          </Values>
+        </String>
+        <Boolean dnOrder="45" id="NVIC_1_0_HANDLER_LOCK">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="core" value="false"/>
+          </Values>
+        </Boolean>
+        <Hex dnOrder="46" id="SYS_PORT_B_ANSEL">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="core" value="16"/>
+          </Values>
+        </Hex>
+        <KeyValueSet dnOrder="47" id="SYS_PORT_PPS_INPUT_FUNCTION_0">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+          <Values dnOrder="1">
+            <User dnOrder="0" value="34"/>
+          </Values>
+        </KeyValueSet>
+        <KeyValueSet dnOrder="48" id="SYS_PORT_PPS_INPUT_FUNCTION_1">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+          <Values dnOrder="1">
+            <User dnOrder="0" value="12"/>
+          </Values>
+        </KeyValueSet>
+        <KeyValueSet dnOrder="49" id="SYS_PORT_PPS_INPUT_PIN_0">
+          <Attributes dnOrder="0">
+            <KeyValuePairList dnOrder="0" id="pairs">
+              <Pairs dnOrder="0">
+                <Pair description="RPB2" dnOrder="0" key="RPB2" value="11"/>
+                <Pair description="RPB3" dnOrder="1" key="RPB3" value="4"/>
+                <Pair description="RPB0" dnOrder="2" key="RPB0" value="11"/>
+                <Pair description="RPA10" dnOrder="3" key="RPA10" value="2"/>
+                <Pair description="RPB1" dnOrder="4" key="RPB1" value="11"/>
+                <Pair description="RPA11" dnOrder="5" key="RPA11" value="10"/>
+                <Pair description="RPB10" dnOrder="6" key="RPB10" value="13"/>
+                <Pair description="RPB11" dnOrder="7" key="RPB11" value="6"/>
+                <Pair description="RPA12" dnOrder="8" key="RPA12" value="10"/>
+                <Pair description="RPB12" dnOrder="9" key="RPB12" value="14"/>
+                <Pair description="RPA13" dnOrder="10" key="RPA13" value="10"/>
+                <Pair description="RPA14" dnOrder="11" key="RPA14" value="3"/>
+                <Pair description="RPB13" dnOrder="12" key="RPB13" value="14"/>
+                <Pair description="RPB8" dnOrder="13" key="RPB8" value="13"/>
+                <Pair description="RPB9" dnOrder="14" key="RPB9" value="13"/>
+                <Pair description="RPB6" dnOrder="15" key="RPB6" value="12"/>
+                <Pair description="RPB7" dnOrder="16" key="RPB7" value="5"/>
+                <Pair description="RPB4" dnOrder="17" key="RPB4" value="5"/>
+                <Pair description="RPB5" dnOrder="18" key="RPB5" value="12"/>
+                <Pair description="RPA1" dnOrder="19" key="RPA1" value="7"/>
+                <Pair description="RPA2" dnOrder="20" key="RPA2" value="15"/>
+                <Pair description="RPA0" dnOrder="21" key="RPA0" value="7"/>
+                <Pair description="RPA9" dnOrder="22" key="RPA9" value="9"/>
+                <Pair description="RPA7" dnOrder="23" key="RPA7" value="9"/>
+                <Pair description="RPA8" dnOrder="24" key="RPA8" value="14"/>
+                <Pair description="RPA5" dnOrder="25" key="RPA5" value="8"/>
+                <Pair description="RPA6" dnOrder="26" key="RPA6" value="1"/>
+                <Pair description="RPA3" dnOrder="27" key="RPA3" value="8"/>
+                <Pair description="RPA4" dnOrder="28" key="RPA4" value="8"/>
+              </Pairs>
+            </KeyValuePairList>
+            <Boolean dnOrder="1" id="visible">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+          <Values dnOrder="1">
+            <User dnOrder="0" value="17"/>
+          </Values>
+        </KeyValueSet>
+        <KeyValueSet dnOrder="50" id="SYS_PORT_PPS_INPUT_PIN_1">
+          <Attributes dnOrder="0">
+            <KeyValuePairList dnOrder="0" id="pairs">
+              <Pairs dnOrder="0">
+                <Pair description="RPB2" dnOrder="0" key="RPB2" value="11"/>
+                <Pair description="RPB3" dnOrder="1" key="RPB3" value="4"/>
+                <Pair description="RPB0" dnOrder="2" key="RPB0" value="11"/>
+                <Pair description="RPA10" dnOrder="3" key="RPA10" value="2"/>
+                <Pair description="RPB1" dnOrder="4" key="RPB1" value="11"/>
+                <Pair description="RPA11" dnOrder="5" key="RPA11" value="10"/>
+                <Pair description="RPB10" dnOrder="6" key="RPB10" value="13"/>
+                <Pair description="RPB11" dnOrder="7" key="RPB11" value="6"/>
+                <Pair description="RPA12" dnOrder="8" key="RPA12" value="10"/>
+                <Pair description="RPB12" dnOrder="9" key="RPB12" value="14"/>
+                <Pair description="RPA13" dnOrder="10" key="RPA13" value="10"/>
+                <Pair description="RPA14" dnOrder="11" key="RPA14" value="3"/>
+                <Pair description="RPB13" dnOrder="12" key="RPB13" value="14"/>
+                <Pair description="RPB8" dnOrder="13" key="RPB8" value="13"/>
+                <Pair description="RPB9" dnOrder="14" key="RPB9" value="13"/>
+                <Pair description="RPB6" dnOrder="15" key="RPB6" value="12"/>
+                <Pair description="RPB7" dnOrder="16" key="RPB7" value="5"/>
+                <Pair description="RPB4" dnOrder="17" key="RPB4" value="12"/>
+                <Pair description="RPB5" dnOrder="18" key="RPB5" value="12"/>
+                <Pair description="RPA1" dnOrder="19" key="RPA1" value="7"/>
+                <Pair description="RPA2" dnOrder="20" key="RPA2" value="8"/>
+                <Pair description="RPA0" dnOrder="21" key="RPA0" value="7"/>
+                <Pair description="RPA9" dnOrder="22" key="RPA9" value="9"/>
+                <Pair description="RPA7" dnOrder="23" key="RPA7" value="9"/>
+                <Pair description="RPA8" dnOrder="24" key="RPA8" value="14"/>
+                <Pair description="RPA5" dnOrder="25" key="RPA5" value="8"/>
+                <Pair description="RPA6" dnOrder="26" key="RPA6" value="1"/>
+                <Pair description="RPA3" dnOrder="27" key="RPA3" value="8"/>
+                <Pair description="RPA4" dnOrder="28" key="RPA4" value="8"/>
+              </Pairs>
+            </KeyValuePairList>
+            <Boolean dnOrder="1" id="visible">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+          <Values dnOrder="1">
+            <User dnOrder="0" value="20"/>
+          </Values>
+        </KeyValueSet>
+        <KeyValueSet dnOrder="51" id="SYS_PORT_PPS_OUTPUT_FUNCTION_0">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+          <Values dnOrder="1">
+            <User dnOrder="0" value="45"/>
+          </Values>
+        </KeyValueSet>
+        <KeyValueSet dnOrder="52" id="SYS_PORT_PPS_OUTPUT_PIN_0">
+          <Attributes dnOrder="0">
+            <KeyValuePairList dnOrder="0" id="pairs">
+              <Pairs dnOrder="0">
+                <Pair description="RPB2G4R" dnOrder="0" key="RPB2" value="RPB2G4R"/>
+                <Pair description="RPB3G4R" dnOrder="1" key="RPB3" value="RPB3G4R"/>
+                <Pair description="RPA10G4R" dnOrder="2" key="RPA10" value="RPA10G4R"/>
+                <Pair description="RPB0G2R" dnOrder="3" key="RPB0" value="RPB0G2R"/>
+                <Pair description="RPB1G3R" dnOrder="4" key="RPB1" value="RPB1G3R"/>
+                <Pair description="RPB10G4R" dnOrder="5" key="RPB10" value="RPB10G4R"/>
+                <Pair description="RPB11G4R" dnOrder="6" key="RPB11" value="RPB11G4R"/>
+                <Pair description="RPB12G2R" dnOrder="7" key="RPB12" value="RPB12G2R"/>
+                <Pair description="RPA13G4R" dnOrder="8" key="RPA13" value="RPA13G4R"/>
+                <Pair description="RPA14G4R" dnOrder="9" key="RPA14" value="RPA14G4R"/>
+                <Pair description="RPB13G3R" dnOrder="10" key="RPB13" value="RPB13G3R"/>
+                <Pair description="RPB8G2R" dnOrder="11" key="RPB8" value="RPB8G2R"/>
+                <Pair description="RPB9G3R" dnOrder="12" key="RPB9" value="RPB9G3R"/>
+                <Pair description="RPB6G4R" dnOrder="13" key="RPB6" value="RPB6G4R"/>
+                <Pair description="RPB7G4R" dnOrder="14" key="RPB7" value="RPB7G4R"/>
+                <Pair description="RPB4G2R" dnOrder="15" key="RPB4" value="RPB4G2R"/>
+                <Pair description="RPB5G3R" dnOrder="16" key="RPB5" value="RPB5G3R"/>
+                <Pair description="RPA1G4R" dnOrder="17" key="RPA1" value="RPA1G4R"/>
+                <Pair description="RPA2G4R" dnOrder="18" key="RPA2" value="RPA2G4R"/>
+                <Pair description="RPA0G3R" dnOrder="19" key="RPA0" value="RPA0G3R"/>
+                <Pair description="RPA9G4R" dnOrder="20" key="RPA9" value="RPA9G4R"/>
+                <Pair description="RPA7G2R" dnOrder="21" key="RPA7" value="RPA7G1R"/>
+                <Pair description="RPA8G4R" dnOrder="22" key="RPA8" value="RPA8G4R"/>
+                <Pair description="RPA5G4R" dnOrder="23" key="RPA5" value="RPA5G4R"/>
+                <Pair description="RPA6G4R" dnOrder="24" key="RPA6" value="RPA6G4R"/>
+                <Pair description="RPA3G3R" dnOrder="25" key="RPA3" value="RPA3G3R"/>
+                <Pair description="RPA4G4R" dnOrder="26" key="RPA4" value="RPA4G4R"/>
+              </Pairs>
+            </KeyValuePairList>
+            <Boolean dnOrder="1" id="visible">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+          <Values dnOrder="1">
+            <User dnOrder="0" value="21"/>
+          </Values>
+        </KeyValueSet>
+        <Boolean dnOrder="53" id="USE_PPS_INPUT_0">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="true"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="54" id="USE_PPS_INPUT_1">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="true"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="55" id="USE_PPS_OUTPUT_0">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="true"/>
+          </Values>
+        </Boolean>
+      </Symbols>
+    </UniqueComponent>
+    <UniqueComponent dnOrder="3" id="dfp"/>
+    <UniqueComponent dnOrder="4" id="eic">
+      <Symbols dnOrder="0">
+        <Menu dnOrder="0" id="DEBOUNCE_MENU">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </Menu>
+        <Hex dnOrder="1" id="EIC_ASYNCH">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="eic" value="0"/>
+          </Values>
+        </Hex>
+        <Boolean dnOrder="2" id="EIC_CHAN_0">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="true"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="3" id="EIC_CONFIG_FILTEN_0">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </Boolean>
+        <KeyValueSet dnOrder="4" id="EIC_CONFIG_SENSE_0">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="1"/>
+          </Values>
+        </KeyValueSet>
+        <Hex dnOrder="5" id="EIC_DEBOUNCEN">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="eic" value="1"/>
+          </Values>
+        </Hex>
+        <Boolean dnOrder="6" id="EIC_DEBOUNCEN_0">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+          <Values dnOrder="1">
+            <User dnOrder="0" value="true"/>
+          </Values>
+        </Boolean>
+        <Hex dnOrder="7" id="EIC_EXTINTEO">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="eic" value="1"/>
+          </Values>
+        </Hex>
+        <Boolean dnOrder="8" id="EIC_EXTINTEO_0">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="true"/>
+          </Values>
+        </Boolean>
+        <Hex dnOrder="9" id="EIC_INT">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="eic" value="0"/>
+          </Values>
+        </Hex>
+        <Menu dnOrder="10" id="EIC_MENU0">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </Menu>
+      </Symbols>
+    </UniqueComponent>
+    <UniqueComponent dnOrder="5" id="evsys">
+      <Symbols dnOrder="0">
+        <Boolean dnOrder="0" id="EVSYS_CHANNEL_0">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="true"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="1" id="EVSYS_CHANNEL_0_EVENT">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">false</Value>
+            </Boolean>
+          </Attributes>
+        </Boolean>
+        <KeyValueSet dnOrder="2" id="EVSYS_CHANNEL_0_GENERATOR">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="10"/>
+          </Values>
+        </KeyValueSet>
+        <Boolean dnOrder="3" id="EVSYS_CHANNEL_0_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="true"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="4" id="EVSYS_CHANNEL_0_OVERRUN">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">false</Value>
+            </Boolean>
+          </Attributes>
+        </Boolean>
+        <KeyValueSet dnOrder="5" id="EVSYS_CHANNEL_0_PATH">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="2"/>
+          </Values>
+        </KeyValueSet>
+        <Boolean dnOrder="6" id="EVSYS_CHANNEL_0_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="7" id="EVSYS_CHANNEL_10_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="8" id="EVSYS_CHANNEL_10_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="9" id="EVSYS_CHANNEL_11_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="10" id="EVSYS_CHANNEL_11_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="11" id="EVSYS_CHANNEL_12_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="12" id="EVSYS_CHANNEL_12_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="13" id="EVSYS_CHANNEL_13_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="14" id="EVSYS_CHANNEL_13_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="15" id="EVSYS_CHANNEL_14_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="16" id="EVSYS_CHANNEL_14_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="17" id="EVSYS_CHANNEL_15_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="18" id="EVSYS_CHANNEL_15_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="19" id="EVSYS_CHANNEL_16_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="20" id="EVSYS_CHANNEL_16_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="21" id="EVSYS_CHANNEL_17_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="22" id="EVSYS_CHANNEL_17_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="23" id="EVSYS_CHANNEL_18_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="24" id="EVSYS_CHANNEL_18_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="25" id="EVSYS_CHANNEL_19_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="26" id="EVSYS_CHANNEL_19_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="27" id="EVSYS_CHANNEL_1_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="28" id="EVSYS_CHANNEL_1_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="29" id="EVSYS_CHANNEL_20_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="30" id="EVSYS_CHANNEL_20_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="31" id="EVSYS_CHANNEL_21_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="32" id="EVSYS_CHANNEL_21_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="33" id="EVSYS_CHANNEL_22_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="34" id="EVSYS_CHANNEL_22_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="35" id="EVSYS_CHANNEL_23_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="36" id="EVSYS_CHANNEL_23_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="37" id="EVSYS_CHANNEL_24_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="38" id="EVSYS_CHANNEL_24_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="39" id="EVSYS_CHANNEL_25_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="40" id="EVSYS_CHANNEL_25_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="41" id="EVSYS_CHANNEL_26_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="42" id="EVSYS_CHANNEL_26_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="43" id="EVSYS_CHANNEL_27_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="44" id="EVSYS_CHANNEL_27_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="45" id="EVSYS_CHANNEL_28_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="46" id="EVSYS_CHANNEL_28_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="47" id="EVSYS_CHANNEL_29_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="48" id="EVSYS_CHANNEL_29_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="49" id="EVSYS_CHANNEL_2_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="50" id="EVSYS_CHANNEL_2_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="51" id="EVSYS_CHANNEL_30_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="52" id="EVSYS_CHANNEL_30_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="53" id="EVSYS_CHANNEL_31_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="54" id="EVSYS_CHANNEL_31_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="55" id="EVSYS_CHANNEL_3_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="56" id="EVSYS_CHANNEL_3_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="57" id="EVSYS_CHANNEL_4_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="58" id="EVSYS_CHANNEL_4_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="59" id="EVSYS_CHANNEL_5_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="60" id="EVSYS_CHANNEL_5_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="61" id="EVSYS_CHANNEL_6_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="62" id="EVSYS_CHANNEL_6_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="63" id="EVSYS_CHANNEL_7_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="64" id="EVSYS_CHANNEL_7_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="65" id="EVSYS_CHANNEL_8_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="66" id="EVSYS_CHANNEL_8_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="67" id="EVSYS_CHANNEL_9_GENERATOR_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Boolean dnOrder="68" id="EVSYS_CHANNEL_9_USER_READY">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="evsys" value="false"/>
+          </Values>
+        </Boolean>
+        <Menu dnOrder="69" id="EVSYS_MENU_0">
+          <Attributes dnOrder="0">
+            <Boolean dnOrder="0" id="visible">
+              <Value dnOrder="0">true</Value>
+            </Boolean>
+          </Attributes>
+        </Menu>
+        <KeyValueSet dnOrder="70" id="EVSYS_USER_50">
+          <Values dnOrder="0">
+            <User dnOrder="0" value="1"/>
+          </Values>
+        </KeyValueSet>
+        <Boolean dnOrder="71" id="GENERATOR_EIC_EXTINT_0_ACTIVE">
+          <Values dnOrder="0">
+            <Dynamic dnOrder="0" id="eic" value="true"/>
+          </Values>
+        </Boolean>
+      </Symbols>
+    </UniqueComponent>
+    <UniqueComponent dnOrder="6" id="nvm"/>
+  </Components>
+  <UserData>
+    <ComponentGraph dnOrder="0" id="__ROOTVIEW">
+      <ElementPositions dnOrder="0">
+        <ElementPosition dnOrder="0" id="ccl" x="271" y="213"/>
+        <ElementPosition dnOrder="1" id="cmsis" x="460" y="20"/>
+        <ElementPosition dnOrder="2" id="core" x="360" y="20"/>
+        <ElementPosition dnOrder="3" id="dfp" x="160" y="20"/>
+        <ElementPosition dnOrder="4" id="eic" x="205" y="108"/>
+        <ElementPosition dnOrder="5" id="evsys" x="20" y="20"/>
+        <ElementPosition dnOrder="6" id="nvm" x="580" y="20"/>
+      </ElementPositions>
+    </ComponentGraph>
+    <GraphSettings canvasHeight="400" canvasWidth="400" dnOrder="1"/>
+  </UserData>
+</Configuration>
