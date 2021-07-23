@@ -206,7 +206,7 @@
       </toolsSet>
       <packs>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
-        <pack name="PIC32CX-BZ_DFP" vendor="Microchip" version="1.0.55"/>
+        <pack name="PIC32CX-BZ_DFP" vendor="Microchip" version="1.0.80"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
