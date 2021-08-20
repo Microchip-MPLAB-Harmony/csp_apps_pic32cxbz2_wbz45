@@ -57,6 +57,7 @@
 */
 void GPIO_Initialize ( void )
 {
+ 
     /* PORTA Initialization */
     /* PORTB Initialization */
     GPIOB_REGS->GPIO_LAT = 0x0; /* Initial Latch Value */

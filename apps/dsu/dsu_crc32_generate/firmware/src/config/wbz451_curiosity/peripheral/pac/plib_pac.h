@@ -181,6 +181,15 @@ typedef enum
 
 } PAC_PERIPHERAL;
 
+typedef void (*PAC_CALLBACK)( uintptr_t context );
+
+typedef struct
+{
+    PAC_CALLBACK callback;
+
+    uintptr_t context;
+
+} PAC_CALLBACK_OBJ;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -194,6 +203,7 @@ void PAC_PeripheralProtectSetup( PAC_PERIPHERAL peripheral, PAC_PROTECTION opera
 
 bool PAC_PeripheralIsProtected( PAC_PERIPHERAL peripheral );
 
+void PAC_CallbackRegister( PAC_CALLBACK callback, uintptr_t context );
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus // Provide C++ Compatibility
