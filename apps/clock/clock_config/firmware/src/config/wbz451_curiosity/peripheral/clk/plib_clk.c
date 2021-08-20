@@ -190,15 +190,13 @@ void CLK_Initialize( void )
     CFG_REGS->CFG_CFGPCLKGEN2 = 0x0;
     CFG_REGS->CFG_CFGPCLKGEN3 = 0x0;
 
-
     /* Peripheral Module Disable Configuration */
-    CFG_REGS->CFG_CFGCON0CLR = CFG_CFGCON0_PMDLOCK_Msk;
+
 
     CFG_REGS->CFG_PMD1 = 0x200101cf;
     CFG_REGS->CFG_PMD2 = 0xd3000000;
     CFG_REGS->CFG_PMD3 = 0x7fff;
 
-    CFG_REGS->CFG_CFGCON0SET = CFG_CFGCON0_PMDLOCK_Msk;
 
     /* Lock system since done with clock configuration */
     CFG_REGS->CFG_SYSKEY = 0x33333333;

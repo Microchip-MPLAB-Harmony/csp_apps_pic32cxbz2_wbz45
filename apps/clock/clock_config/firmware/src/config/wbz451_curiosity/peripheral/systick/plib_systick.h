@@ -45,7 +45,7 @@
 #include <stddef.h>
 
 #ifdef __cplusplus // Provide C++ Compatibility
-	extern "C" {
+    extern "C" {
 #endif
 
 
@@ -55,18 +55,9 @@
 // *****************************************************************************
 // *****************************************************************************
 
-#define SYSTICK_FREQ	64000000
+#define SYSTICK_FREQ   64000000U
 
-#define SYSTICK_INTERRUPT_PERIOD_IN_US  (1000)
-	
-typedef void (*SYSTICK_CALLBACK)(uintptr_t context);
 
-typedef struct
-{
-	SYSTICK_CALLBACK          callback;
-	uintptr_t                 context;
-	volatile uint32_t         tickCounter;
-} SYSTICK_OBJECT ;
 /***************************** SYSTICK API *******************************/
 void SYSTICK_TimerInitialize ( void );
 void SYSTICK_TimerRestart ( void );
@@ -76,8 +67,10 @@ void SYSTICK_TimerPeriodSet ( uint32_t period );
 uint32_t SYSTICK_TimerPeriodGet ( void );
 uint32_t SYSTICK_TimerCounterGet ( void );
 uint32_t SYSTICK_TimerFrequencyGet ( void );
-void SYSTICK_DelayMs ( uint32_t ms );
-void SYSTICK_TimerCallbackSet ( SYSTICK_CALLBACK callback, uintptr_t context );
+void SYSTICK_DelayMs ( uint32_t delay_ms );
+void SYSTICK_DelayUs ( uint32_t delay_us );
+
+bool SYSTICK_TimerPeriodHasExpired(void);
 #ifdef __cplusplus // Provide C++ Compatibility
  }
 #endif
