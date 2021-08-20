@@ -61,12 +61,6 @@ void DMT_Enable( void )
     DMT_REGS->DMT_DMTCONSET = DMT_DMTCON_ON_Msk;
 }
 
-void DMT_Disable( void )
-{
-    /* ON = 0 */
-    DMT_REGS->DMT_DMTCONCLR = DMT_DMTCON_ON_Msk;
-}
-
 void DMT_Clear( void )
 {
     /* Clear STEP1 */
