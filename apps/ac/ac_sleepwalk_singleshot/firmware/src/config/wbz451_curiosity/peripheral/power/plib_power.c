@@ -57,18 +57,6 @@
 // Section: Power Implementation
 // *****************************************************************************
 // *****************************************************************************
-void POWER_Initialize( void )
-{
-    /* unlock system */
-    CFG_REGS->CFG_SYSKEY = 0x00000000;
-    CFG_REGS->CFG_SYSKEY = 0xAA996655;
-    CFG_REGS->CFG_SYSKEY = 0x556699AA;
-
-    DSCON_REGS->DSCON_DSCON = 0x0;
-    DSCON_REGS->DSCON_DSCON = 0x0;
-
-    CFG_REGS->CFG_SYSKEY = 0;
-}
 void POWER_LowPowerModeEnter (POWER_LOW_POWER_MODE mode)
 {
     /* unlock system */
@@ -87,11 +75,6 @@ void POWER_LowPowerModeEnter (POWER_LOW_POWER_MODE mode)
         case LOW_POWER_DREAM_MODE:
                         CRU_REGS->CRU_OSCCONSET = CRU_OSCCON_SLPEN_Msk | CRU_OSCCON_DRMEN_Msk;
                         break;
-        case LOW_POWER_DEEP_SLEEP_MODE:
-                        CRU_REGS->CRU_OSCCONSET = CRU_OSCCON_SLPEN_Msk;
-                        DSCON_REGS->DSCON_DSCON = DSCON_DSCON_DSEN_Msk;
-                        DSCON_REGS->DSCON_DSCON = DSCON_DSCON_DSEN_Msk;
-                        break;
         default: 
                         return;
     }
@@ -102,56 +85,3 @@ void POWER_LowPowerModeEnter (POWER_LOW_POWER_MODE mode)
     __WFI();
 }
 
-POWER_DS_WAKEUP_SOURCE POWER_DS_WakeupSourceGet( void )
-{
-    return (POWER_DS_WAKEUP_SOURCE)(DSCON_REGS->DSCON_DSWAKE);
-}
-
-void POWER_DS_SoftwareRestore(void)
-{
-    /* unlock system */
-    CFG_REGS->CFG_SYSKEY = 0x00000000;
-    CFG_REGS->CFG_SYSKEY = 0xAA996655;
-    CFG_REGS->CFG_SYSKEY = 0x556699AA;
-
-    DSCON_REGS->DSCON_DSCON &= ~DSCON_DSCON_DSSR_Msk;
-    DSCON_REGS->DSCON_DSCON &= ~DSCON_DSCON_DSSR_Msk;
-
-    CFG_REGS->CFG_SYSKEY = 0;
-}
-
-// DSCON.RELEASE must be 0 before calling this
-void POWER_DS_WakeupSourceClear( POWER_DS_WAKEUP_SOURCE wakeupSource )
-{
-    DSCON_REGS->DSCON_DSWAKE &= ~wakeupSource;
-}
-
-void POWER_DS_Semaphore1Write(uint32_t sema1Value)
-{
-    /* unlock system */
-    CFG_REGS->CFG_SYSKEY = 0x00000000;
-    CFG_REGS->CFG_SYSKEY = 0xAA996655;
-    CFG_REGS->CFG_SYSKEY = 0x556699AA;
-    DSCON_REGS->DSCON_DSSEMA1 = sema1Value;
-    DSCON_REGS->DSCON_DSSEMA1 = sema1Value;
-}
-
-uint32_t POWER_DS_Semaphore1Read(void)
-{
-    return DSCON_REGS->DSCON_DSSEMA1;
-}
-
-void POWER_DS_ExtendedSemaphoreWrite(POWER_DS_EXTENDED_SEMAPHORE xsema, uint32_t xsemaValue)
-{
-    /* unlock system */
-    CFG_REGS->CFG_SYSKEY = 0x00000000;
-    CFG_REGS->CFG_SYSKEY = 0xAA996655;
-    CFG_REGS->CFG_SYSKEY = 0x556699AA;
-    *((volatile uint32_t *)(&DSCON_REGS->DSCON_DSXSEMA1)+ xsema) = xsemaValue;
-    *((volatile uint32_t *)(&DSCON_REGS->DSCON_DSXSEMA1)+ xsema) = xsemaValue;
-}
-
-uint32_t POWER_DS_ExtendedSemaphoreRead(POWER_DS_EXTENDED_SEMAPHORE xsema)
-{
-    return (*((volatile uint32_t *)(&DSCON_REGS->DSCON_DSXSEMA1)+ xsema));
-}

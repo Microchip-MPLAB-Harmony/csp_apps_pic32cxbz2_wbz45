@@ -134,9 +134,9 @@ void CLK_Initialize( void )
     /* SPLLFLOCK    = 0x0    */
     /* SPLLRST      = 0x0      */    
     /* SPLLPOSTDIV1 = 1 */
-    /* SPLLPOSTDIV2 = 0x1 */    
+    /* SPLLPOSTDIV2 = 0x0 */    
     /* SPLL_BYP     = 0x3     */
-    CRU_REGS->CRU_SPLLCON = 0xc0010108;
+    CRU_REGS->CRU_SPLLCON = 0xc0000108;
 
 
     /* OSWEN    = SWITCH_COMPLETE    */
@@ -164,10 +164,10 @@ void CLK_Initialize( void )
     /* REFO1CON register */
     /* ROSEL =  SPLL1 */
     /* DIVSWEN = 1 */
-    /* RSLP = true */ 
+    /* RSLP = false */ 
     /* SIDL = false */ 
     /* RODIV = 0 */
-    CRU_REGS->CRU_REFO1CON = 0xa01;
+    CRU_REGS->CRU_REFO1CON = 0x201;
 
     /* Enable oscillator (ON bit) */
     CRU_REGS->CRU_REFO1CONSET = 0x00008000;
@@ -178,15 +178,13 @@ void CLK_Initialize( void )
     CFG_REGS->CFG_CFGPCLKGEN2 = 0x9;
     CFG_REGS->CFG_CFGPCLKGEN3 = 0x90000;
 
-
     /* Peripheral Module Disable Configuration */
-    CFG_REGS->CFG_CFGCON0CLR = CFG_CFGCON0_PMDLOCK_Msk;
+
 
     CFG_REGS->CFG_PMD1 = 0x2000018f;
     CFG_REGS->CFG_PMD2 = 0xf3000000;
     CFG_REGS->CFG_PMD3 = 0x7ffd;
 
-    CFG_REGS->CFG_CFGCON0SET = CFG_CFGCON0_PMDLOCK_Msk;
 
     /* Lock system since done with clock configuration */
     CFG_REGS->CFG_SYSKEY = 0x33333333;

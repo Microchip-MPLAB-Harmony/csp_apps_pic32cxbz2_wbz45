@@ -3,4 +3,4 @@ type: UniqueComponent
 attributes: {id: power}
 children:
 - type: ElementPosition
-  attributes: {x: '312', y: '60', id: power}
+  attributes: {x: '578', y: '107', id: power}

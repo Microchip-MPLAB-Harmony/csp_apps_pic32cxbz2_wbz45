@@ -232,7 +232,6 @@ void SYS_Initialize ( void* data )
                                     | (PCHE_CHECON_PFMWS(1) | PCHE_CHECON_PREFEN(1));
 
 
-	POWER_Initialize();
 	GPIO_Initialize();
 
     SERCOM1_USART_Initialize();

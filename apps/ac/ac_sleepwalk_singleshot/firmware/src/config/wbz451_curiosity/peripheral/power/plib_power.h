@@ -76,31 +76,8 @@ typedef enum {
     LOW_POWER_IDLE_MODE,
     LOW_POWER_SLEEP_MODE,
     LOW_POWER_DREAM_MODE,
-    LOW_POWER_DEEP_SLEEP_MODE,
 } POWER_LOW_POWER_MODE;
 
-typedef enum
-{
-    POWER_DS_WAKEUP_SOURCE_ICD = DSCON_DSWAKE_ICD_Msk,
-
-    POWER_DS_WAKEUP_SOURCE_MCLR = DSCON_DSWAKE_MCLR_Msk,
-
-    POWER_DS_WAKEUP_SOURCE_RTCC = DSCON_DSWAKE_RTCC_Msk,
-
-    POWER_DS_WAKEUP_SOURCE_DSWDT = DSCON_DSWAKE_DSWDT_Msk,
-
-    POWER_DS_WAKEUP_SOURCE_EXT = DSCON_DSWAKE_EXT_Msk,
-
-    POWER_DS_WAKEUP_SOURCE_FAULT = DSCON_DSWAKE_FAULT_Msk,
-
-    POWER_DS_WAKEUP_SOURCE_INT0 = DSCON_DSWAKE_INT0_Msk,
-
-} POWER_DS_WAKEUP_SOURCE;
-
-typedef enum
-{
-    POWER_DS_EXTENDED_SEMAPHORE_1,
-} POWER_DS_EXTENDED_SEMAPHORE;
 // *****************************************************************************
 // *****************************************************************************
 // Section: Interface
@@ -108,14 +85,6 @@ typedef enum
 // *****************************************************************************
 
 void POWER_LowPowerModeEnter( POWER_LOW_POWER_MODE mode );
-void POWER_Initialize( void );
-POWER_DS_WAKEUP_SOURCE POWER_DS_WakeupSourceGet( void );
-void POWER_DS_SoftwareRestore(void);
-void POWER_DS_WakeupSourceClear( POWER_DS_WAKEUP_SOURCE wakeupSource );
-void POWER_DS_SemaphoreWrite(uint32_t sema1Value);
-uint32_t POWER_DS_SemaphoreRead(void);
-void POWER_DS_ExtendedSemaphoreWrite(POWER_DS_EXTENDED_SEMAPHORE xsema, uint32_t xsemaValue);
-uint32_t POWER_DS_ExtendedSemaphoreRead(POWER_DS_EXTENDED_SEMAPHORE xsema);
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
 
