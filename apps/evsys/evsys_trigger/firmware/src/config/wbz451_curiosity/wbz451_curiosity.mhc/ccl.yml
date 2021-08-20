@@ -25,27 +25,6 @@ children:
       children:
       - type: Dynamic
         attributes: {id: ccl, value: '18875266'}
-  - type: Hex
-    attributes: {id: CCL_LUTCTRL_REGVALUE1}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: ccl, value: '0'}
-  - type: Hex
-    attributes: {id: CCL_SEQCTRL_REGVALUE0}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: ccl, value: '0'}
-  - type: Hex
-    attributes: {id: CCL_SEQCTRL_REGVALUE1}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: ccl, value: '0'}
   - type: KeyValueSet
     attributes: {id: CTRL0__ENABLE}
     children:
@@ -191,4 +170,4 @@ children:
         children:
         - {type: Value, value: 'true'}
 - type: ElementPosition
-  attributes: {x: '271', y: '213', id: ccl}
+  attributes: {x: '252', y: '124', id: ccl}

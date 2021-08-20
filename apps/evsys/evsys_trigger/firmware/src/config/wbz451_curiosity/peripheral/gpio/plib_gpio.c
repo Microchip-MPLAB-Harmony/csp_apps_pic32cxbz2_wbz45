@@ -57,30 +57,19 @@
 */
 void GPIO_Initialize ( void )
 {
-    /* Disable JTAG since at least one of its pins is configured for Non-JTAG function */
-    CFG_REGS->CFG_CFGCON0CLR = CFG_CFGCON0_JTAGEN_Msk;
-
-          /* PORTA Initialization */
+ 
+    /* PORTA Initialization */
     /* PORTB Initialization */
     GPIOB_REGS->GPIO_ANSELCLR = 0x10; /* Digital Mode Enable */
 
-    /* Unlock system for PPS configuration */
-    CFG_REGS->CFG_SYSKEY = 0x00000000;
-    CFG_REGS->CFG_SYSKEY = 0xAA996655;
-    CFG_REGS->CFG_SYSKEY = 0x556699AA;
-
-    CFG_REGS->CFG_CFGCON0CLR = CFG_CFGCON0_IOLOCK_Msk;
 
     /* PPS Input Remapping */
-    PPS_REGS->PPS_EXTINT0R = 5;
     PPS_REGS->PPS_CCLIN0R = 8;
+    PPS_REGS->PPS_EXTINT0R = 5;
 
     /* PPS Output Remapping */
     PPS_REGS->PPS_RPA7G1R = 28;
 
-    /* Lock back the system after PPS configuration */
-    CFG_REGS->CFG_CFGCON0SET = CFG_CFGCON0_IOLOCK_Msk;
-    CFG_REGS->CFG_SYSKEY = 0x00000000;
 
 }
 
