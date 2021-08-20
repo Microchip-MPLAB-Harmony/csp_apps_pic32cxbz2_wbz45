@@ -61,17 +61,11 @@
 #pragma config TDOEN =      ON
 #pragma config SWOEN =      ON
 #pragma config TROEN =      OFF
-#pragma config JTAGEN =      ON
 #pragma config ADCPOVR =      HW
 #pragma config ACCMP1_ALTEN =      PA1
 #pragma config CPENFILT =      OFF
 #pragma config RTCIN0_ALTEN =      PA3
 #pragma config RTCOUT_ALTEN =      PA4
-#pragma config PMULOCK =      OFF
-#pragma config PGLOCK =      OFF
-#pragma config PMDLOCK =      OFF
-#pragma config IOLOCK =      UNLOCKED
-#pragma config CFGLOCK =      NVR_NOT_LOCKED
 #pragma config VBCMODE =      DIRECT
 #pragma config SMBUSEN0 =      OFF
 #pragma config SMBUSEN1 =      OFF
@@ -88,7 +82,6 @@
 
 
 /*** DEVCFG1 ***/
-#pragma config DEBUG =      3
 #pragma config ICESEL =      PGC1_PGD1
 #pragma config TRCEN =      ON
 #pragma config ZBTWKSYS =      OFF
@@ -111,7 +104,6 @@
 #pragma config WDTPSS =      PSS1048576
 #pragma config QSPIDDRM =      OFF
 #pragma config CLKZBREF =      OFF
-#pragma config FMPDAEN =      OFF
 
 /*** DEVCFG2 ***/
 #pragma config ACMP_CYCLE =      _32US
@@ -209,6 +201,7 @@
 
 void SYS_Initialize ( void* data )
 {
+
   
     CLK_Initialize();
     /* Configure Prefetch, Wait States */
@@ -221,8 +214,6 @@ void SYS_Initialize ( void* data )
     EVSYS_Initialize();
 
     SERCOM0_SPI_Initialize();
-
-    NVM_Initialize();
 
 
     CCL_Initialize();

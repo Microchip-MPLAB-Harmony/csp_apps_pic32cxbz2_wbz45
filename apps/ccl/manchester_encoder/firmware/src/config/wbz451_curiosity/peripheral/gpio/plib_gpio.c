@@ -57,16 +57,11 @@
 */
 void GPIO_Initialize ( void )
 {
+ 
     /* PORTA Initialization */
     /* PORTB Initialization */
     GPIOB_REGS->GPIO_ANSELCLR = 0x6; /* Digital Mode Enable */
 
-    /* Unlock system for PPS configuration */
-    CFG_REGS->CFG_SYSKEY = 0x00000000;
-    CFG_REGS->CFG_SYSKEY = 0xAA996655;
-    CFG_REGS->CFG_SYSKEY = 0x556699AA;
-
-    CFG_REGS->CFG_CFGCON0CLR = CFG_CFGCON0_IOLOCK_Msk;
 
     /* PPS Input Remapping */
     PPS_REGS->PPS_CCLIN1R = 4;
@@ -76,9 +71,6 @@ void GPIO_Initialize ( void )
     PPS_REGS->PPS_RPA8G3R = 1;
     PPS_REGS->PPS_RPB2G3R = 28;
 
-    /* Lock back the system after PPS configuration */
-    CFG_REGS->CFG_CFGCON0SET = CFG_CFGCON0_IOLOCK_Msk;
-    CFG_REGS->CFG_SYSKEY = 0x00000000;
 
 }
 

@@ -32,7 +32,7 @@ The following table shows the target hardware for the application projects.
 
 
 ### Setting up [PIC32CX WBZ451 Curiosity Board](https://www.microchip.com/developmenttools/ProductDetails/)
-- Use jumper from RA8 (SCK pin of mikroBUS connector) To RB1 (an pin of mikroBUS connector) (This routes SCK signal To CCLIN1)
+- Use jumper from RA8 (SCK pin of mikroBUS connector) To RB1 (AN pin of mikroBUS connector) (This routes SCK signal To CCLIN1)
 - RA7 (MOSI pin of mikroBUS connector) has MOSI output
 - RB2 (RST pin of mikroBUS connector) has CCL output (CCL_OUT0)
 - Connect the Debug USB port on the board to the computer using a micro USB cable
