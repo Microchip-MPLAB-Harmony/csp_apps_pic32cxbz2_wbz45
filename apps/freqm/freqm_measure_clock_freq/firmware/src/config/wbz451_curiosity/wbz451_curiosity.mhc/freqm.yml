@@ -51,4 +51,4 @@ children:
         children:
         - {type: Value, value: '*** Measurement Time 3.906 mS ***'}
 - type: ElementPosition
-  attributes: {x: '75', y: '112', id: freqm}
+  attributes: {x: '580', y: '20', id: freqm}
