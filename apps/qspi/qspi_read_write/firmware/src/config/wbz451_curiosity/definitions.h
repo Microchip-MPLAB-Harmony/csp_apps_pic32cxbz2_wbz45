@@ -55,7 +55,6 @@
 #include "peripheral/nvic/plib_nvic.h"
 #include "peripheral/systick/plib_systick.h"
 #include "peripheral/cmcc/plib_cmcc.h"
-#include "peripheral/nvm/plib_nvm.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
@@ -64,6 +63,9 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* CPU clock frequency */
+#define CPU_CLOCK_FREQUENCY 64000000
 
 // *****************************************************************************
 // *****************************************************************************
