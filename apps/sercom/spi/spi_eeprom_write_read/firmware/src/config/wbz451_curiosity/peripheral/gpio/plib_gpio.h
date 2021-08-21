@@ -61,30 +61,6 @@
 // *****************************************************************************
 // *****************************************************************************
 
-/*** Macros for EEPROM_HOLD pin ***/
-#define EEPROM_HOLD_Set()               (GPIOA_REGS->GPIO_LATSET = (1<<2))
-#define EEPROM_HOLD_Clear()             (GPIOA_REGS->GPIO_LATCLR = (1<<2))
-#define EEPROM_HOLD_Toggle()            (GPIOA_REGS->GPIO_LATINV= (1<<2))
-#define EEPROM_HOLD_Get()               ((GPIOA_REGS->GPIO_PORT >> 2) & 0x1)
-#define EEPROM_HOLD_OutputEnable()      (GPIOA_REGS->GPIO_TRISCLR = (1<<2))
-#define EEPROM_HOLD_InputEnable()       (GPIOA_REGS->GPIO_TRISSET = (1<<2))
-#define EEPROM_HOLD_PIN                  GPIO_PIN_RA2
-/*** Macros for EEPROM_CS pin ***/
-#define EEPROM_CS_Set()               (GPIOA_REGS->GPIO_LATSET = (1<<9))
-#define EEPROM_CS_Clear()             (GPIOA_REGS->GPIO_LATCLR = (1<<9))
-#define EEPROM_CS_Toggle()            (GPIOA_REGS->GPIO_LATINV= (1<<9))
-#define EEPROM_CS_Get()               ((GPIOA_REGS->GPIO_PORT >> 9) & 0x1)
-#define EEPROM_CS_OutputEnable()      (GPIOA_REGS->GPIO_TRISCLR = (1<<9))
-#define EEPROM_CS_InputEnable()       (GPIOA_REGS->GPIO_TRISSET = (1<<9))
-#define EEPROM_CS_PIN                  GPIO_PIN_RA9
-/*** Macros for EEPROM_WP pin ***/
-#define EEPROM_WP_Set()               (GPIOB_REGS->GPIO_LATSET = (1<<2))
-#define EEPROM_WP_Clear()             (GPIOB_REGS->GPIO_LATCLR = (1<<2))
-#define EEPROM_WP_Toggle()            (GPIOB_REGS->GPIO_LATINV= (1<<2))
-#define EEPROM_WP_Get()               ((GPIOB_REGS->GPIO_PORT >> 2) & 0x1)
-#define EEPROM_WP_OutputEnable()      (GPIOB_REGS->GPIO_TRISCLR = (1<<2))
-#define EEPROM_WP_InputEnable()       (GPIOB_REGS->GPIO_TRISSET = (1<<2))
-#define EEPROM_WP_PIN                  GPIO_PIN_RB2
 /*** Macros for LED pin ***/
 #define LED_Set()               (GPIOB_REGS->GPIO_LATSET = (1<<3))
 #define LED_Clear()             (GPIOB_REGS->GPIO_LATCLR = (1<<3))
@@ -93,6 +69,30 @@
 #define LED_OutputEnable()      (GPIOB_REGS->GPIO_TRISCLR = (1<<3))
 #define LED_InputEnable()       (GPIOB_REGS->GPIO_TRISSET = (1<<3))
 #define LED_PIN                  GPIO_PIN_RB3
+/*** Macros for EEPROM_CS pin ***/
+#define EEPROM_CS_Set()               (GPIOA_REGS->GPIO_LATSET = (1<<9))
+#define EEPROM_CS_Clear()             (GPIOA_REGS->GPIO_LATCLR = (1<<9))
+#define EEPROM_CS_Toggle()            (GPIOA_REGS->GPIO_LATINV= (1<<9))
+#define EEPROM_CS_Get()               ((GPIOA_REGS->GPIO_PORT >> 9) & 0x1)
+#define EEPROM_CS_OutputEnable()      (GPIOA_REGS->GPIO_TRISCLR = (1<<9))
+#define EEPROM_CS_InputEnable()       (GPIOA_REGS->GPIO_TRISSET = (1<<9))
+#define EEPROM_CS_PIN                  GPIO_PIN_RA9
+/*** Macros for EEPROM_HOLD pin ***/
+#define EEPROM_HOLD_Set()               (GPIOA_REGS->GPIO_LATSET = (1<<2))
+#define EEPROM_HOLD_Clear()             (GPIOA_REGS->GPIO_LATCLR = (1<<2))
+#define EEPROM_HOLD_Toggle()            (GPIOA_REGS->GPIO_LATINV= (1<<2))
+#define EEPROM_HOLD_Get()               ((GPIOA_REGS->GPIO_PORT >> 2) & 0x1)
+#define EEPROM_HOLD_OutputEnable()      (GPIOA_REGS->GPIO_TRISCLR = (1<<2))
+#define EEPROM_HOLD_InputEnable()       (GPIOA_REGS->GPIO_TRISSET = (1<<2))
+#define EEPROM_HOLD_PIN                  GPIO_PIN_RA2
+/*** Macros for EEPROM_WP pin ***/
+#define EEPROM_WP_Set()               (GPIOB_REGS->GPIO_LATSET = (1<<2))
+#define EEPROM_WP_Clear()             (GPIOB_REGS->GPIO_LATCLR = (1<<2))
+#define EEPROM_WP_Toggle()            (GPIOB_REGS->GPIO_LATINV= (1<<2))
+#define EEPROM_WP_Get()               ((GPIOB_REGS->GPIO_PORT >> 2) & 0x1)
+#define EEPROM_WP_OutputEnable()      (GPIOB_REGS->GPIO_TRISCLR = (1<<2))
+#define EEPROM_WP_InputEnable()       (GPIOB_REGS->GPIO_TRISSET = (1<<2))
+#define EEPROM_WP_PIN                  GPIO_PIN_RB2
 
 
 // *****************************************************************************
@@ -117,6 +117,14 @@ typedef enum
     GPIO_PORT_A = GPIOA_BASE_ADDRESS,
     GPIO_PORT_B = GPIOB_BASE_ADDRESS,
 } GPIO_PORT;
+
+typedef enum
+{
+    GPIO_INTERRUPT_ON_MISMATCH,
+    GPIO_INTERRUPT_ON_RISING_EDGE,
+    GPIO_INTERRUPT_ON_FALLING_EDGE,
+    GPIO_INTERRUPT_ON_BOTH_EDGES,
+}GPIO_INTERRUPT_STYLE;
 
 // *****************************************************************************
 /* GPIO Port Pins
