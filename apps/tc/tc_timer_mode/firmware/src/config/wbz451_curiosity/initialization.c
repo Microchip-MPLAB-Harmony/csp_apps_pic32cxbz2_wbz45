@@ -215,8 +215,6 @@ void SYS_Initialize ( void* data )
 
     TC0_TimerInitialize();
 
-    NVM_Initialize();
-
 
 
 

@@ -62,13 +62,13 @@
 // *****************************************************************************
 
 /*** Macros for LED pin ***/
-#define LED_Set()               (GPIOB_REGS->GPIO_LATSET = (1<<0))
-#define LED_Clear()             (GPIOB_REGS->GPIO_LATCLR = (1<<0))
-#define LED_Toggle()            (GPIOB_REGS->GPIO_LATINV= (1<<0))
-#define LED_Get()               ((GPIOB_REGS->GPIO_PORT >> 0) & 0x1)
-#define LED_OutputEnable()      (GPIOB_REGS->GPIO_TRISCLR = (1<<0))
-#define LED_InputEnable()       (GPIOB_REGS->GPIO_TRISSET = (1<<0))
-#define LED_PIN                  GPIO_PIN_RB0
+#define LED_Set()               (GPIOB_REGS->GPIO_LATSET = (1<<3))
+#define LED_Clear()             (GPIOB_REGS->GPIO_LATCLR = (1<<3))
+#define LED_Toggle()            (GPIOB_REGS->GPIO_LATINV= (1<<3))
+#define LED_Get()               ((GPIOB_REGS->GPIO_PORT >> 3) & 0x1)
+#define LED_OutputEnable()      (GPIOB_REGS->GPIO_TRISCLR = (1<<3))
+#define LED_InputEnable()       (GPIOB_REGS->GPIO_TRISSET = (1<<3))
+#define LED_PIN                  GPIO_PIN_RB3
 
 
 // *****************************************************************************
@@ -93,6 +93,14 @@ typedef enum
     GPIO_PORT_A = GPIOA_BASE_ADDRESS,
     GPIO_PORT_B = GPIOB_BASE_ADDRESS,
 } GPIO_PORT;
+
+typedef enum
+{
+    GPIO_INTERRUPT_ON_MISMATCH,
+    GPIO_INTERRUPT_ON_RISING_EDGE,
+    GPIO_INTERRUPT_ON_FALLING_EDGE,
+    GPIO_INTERRUPT_ON_BOTH_EDGES,
+}GPIO_INTERRUPT_STYLE;
 
 // *****************************************************************************
 /* GPIO Port Pins
