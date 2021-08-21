@@ -96,7 +96,7 @@
 #pragma config QSPI_HSEN =      PPS
 #pragma config SCOM0_HSEN =      PPS
 #pragma config SCOM1_HSEN =      PPS
-#pragma config SCOM2_HSEN =      PPS
+#pragma config SCOM2_HSEN =      DIRECT
 #pragma config CCL_OE =      ON
 #pragma config I2CDSEL0 =      OFF
 #pragma config I2CDSEL1 =      OFF
@@ -104,7 +104,6 @@
 #pragma config WDTPSS =      PSS1048576
 #pragma config QSPIDDRM =      OFF
 #pragma config CLKZBREF =      OFF
-#pragma config FMPDAEN =      OFF
 
 /*** DEVCFG2 ***/
 #pragma config ACMP_CYCLE =      _32US
@@ -215,8 +214,6 @@ void SYS_Initialize ( void* data )
     SERCOM2_I2C_Initialize();
 
     EVSYS_Initialize();
-
-    NVM_Initialize();
 
 
 
