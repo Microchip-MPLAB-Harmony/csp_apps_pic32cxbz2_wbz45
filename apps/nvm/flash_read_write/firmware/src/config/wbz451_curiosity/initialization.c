@@ -104,7 +104,6 @@
 #pragma config WDTPSS =      PSS1048576
 #pragma config QSPIDDRM =      OFF
 #pragma config CLKZBREF =      OFF
-#pragma config FMPDAEN =      OFF
 
 /*** DEVCFG2 ***/
 #pragma config ACMP_CYCLE =      _32US
