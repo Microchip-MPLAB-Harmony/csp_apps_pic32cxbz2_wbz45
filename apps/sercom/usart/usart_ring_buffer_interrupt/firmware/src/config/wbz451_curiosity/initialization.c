@@ -104,7 +104,6 @@
 #pragma config WDTPSS =      PSS1048576
 #pragma config QSPIDDRM =      OFF
 #pragma config CLKZBREF =      OFF
-#pragma config FMPDAEN =      OFF
 
 /*** DEVCFG2 ***/
 #pragma config ACMP_CYCLE =      _32US
@@ -202,7 +201,7 @@
 
 void SYS_Initialize ( void* data )
 {
-  
+
   
     CLK_Initialize();
     /* Configure Prefetch, Wait States */
@@ -215,8 +214,6 @@ void SYS_Initialize ( void* data )
     SERCOM1_USART_Initialize();
 
     EVSYS_Initialize();
-
-    NVM_Initialize();
 
 
 
