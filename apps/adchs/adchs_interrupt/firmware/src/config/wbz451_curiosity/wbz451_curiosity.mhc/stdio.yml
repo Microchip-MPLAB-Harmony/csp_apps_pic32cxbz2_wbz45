@@ -27,4 +27,4 @@ children:
         children:
         - {type: Value, value: SERCOM1_UART}
 - type: ElementPosition
-  attributes: {x: '170', y: '140', id: stdio}
+  attributes: {x: '378', y: '120', id: stdio}
