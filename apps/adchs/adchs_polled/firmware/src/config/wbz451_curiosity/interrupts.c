@@ -85,6 +85,7 @@ extern void PendSV_Handler             ( void ) __attribute__((weak, alias("Dumm
 extern void RTC_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void EIC_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void FREQM_Handler              ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void FLASH_CONTROL_Handler      ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void CHANGE_NOTICE_A_Handler    ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void CHANGE_NOTICE_B_Handler    ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void DMAC_0_3_Handler           ( void ) __attribute__((weak, alias("Dummy_Handler")));
@@ -97,7 +98,7 @@ extern void SERCOM0_Handler            ( void ) __attribute__((weak, alias("Dumm
 extern void SERCOM1_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void SERCOM2_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void SERCOM3_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler")));
-extern void TCC0_0_Handler             ( void ) __attribute__((weak, alias("Dummy_Handler")));
+extern void TCC0_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void TCC1_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void TCC2_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void TC0_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler")));
@@ -147,7 +148,7 @@ const H3DeviceVectors exception_table=
     .pfnRTC_Handler                = RTC_Handler,
     .pfnEIC_Handler                = EIC_Handler,
     .pfnFREQM_Handler              = FREQM_Handler,
-    .pfnFLASH_CONTROL_Handler      = NVM_InterruptHandler,
+    .pfnFLASH_CONTROL_Handler      = FLASH_CONTROL_Handler,
     .pfnCHANGE_NOTICE_A_Handler    = CHANGE_NOTICE_A_Handler,
     .pfnCHANGE_NOTICE_B_Handler    = CHANGE_NOTICE_B_Handler,
     .pfnDMAC_0_3_Handler           = DMAC_0_3_Handler,
@@ -160,7 +161,7 @@ const H3DeviceVectors exception_table=
     .pfnSERCOM1_Handler            = SERCOM1_Handler,
     .pfnSERCOM2_Handler            = SERCOM2_Handler,
     .pfnSERCOM3_Handler            = SERCOM3_Handler,
-    .pfnTCC0_Handler               = TCC0_0_Handler,
+    .pfnTCC0_Handler               = TCC0_Handler,
     .pfnTCC1_Handler               = TCC1_Handler,
     .pfnTCC2_Handler               = TCC2_Handler,
     .pfnTC0_Handler                = TC0_Handler,

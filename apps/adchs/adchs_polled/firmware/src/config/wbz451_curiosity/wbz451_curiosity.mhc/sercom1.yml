@@ -131,7 +131,7 @@ children:
       - type: Boolean
         attributes: {id: readOnly}
         children:
-        - {type: Value, value: 'false'}
+        - {type: Value, value: 'true'}
     - type: Values
       children:
       - type: Dynamic
@@ -198,4 +198,4 @@ children:
         children:
         - {type: Value, value: UART}
 - type: ElementPosition
-  attributes: {x: '79', y: '209', id: sercom1}
+  attributes: {x: '108', y: '174', id: sercom1}
