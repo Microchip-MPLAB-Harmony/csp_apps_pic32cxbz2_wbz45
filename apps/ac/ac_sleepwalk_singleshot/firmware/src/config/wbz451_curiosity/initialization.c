@@ -140,7 +140,6 @@
 #pragma config DSWDTEN =      OFF
 #pragma config DSEN =    ON
 #pragma config UVREGROVR =      CONTROLLED
-#pragma config LPOSCEN =      OFF
 #pragma config RTCNTM_CSEL =      RAW
 
 /*** FBCFG0 ***/
@@ -149,6 +148,7 @@
 
 /*** FCPN0 ***/
 #pragma config CP =      DISABLED
+
 
 
 
@@ -232,15 +232,16 @@ void SYS_Initialize ( void* data )
                                     | (PCHE_CHECON_PFMWS(1) | PCHE_CHECON_PREFEN(1));
 
 
+	POWER_Initialize();
 	GPIO_Initialize();
 
     SERCOM1_USART_Initialize();
 
     EVSYS_Initialize();
 
-    AC_Initialize();
     RTC_Initialize();
 
+    AC_Initialize();
 
 
 

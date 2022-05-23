@@ -490,6 +490,13 @@ children:
       - type: User
         attributes: {value: '1'}
   - type: Boolean
+    attributes: {id: GENERATOR_AC_COMP_0_ACTIVE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: ac, value: 'false'}
+  - type: Boolean
     attributes: {id: GENERATOR_RTC_CMP_0_ACTIVE}
     children:
     - type: Values
