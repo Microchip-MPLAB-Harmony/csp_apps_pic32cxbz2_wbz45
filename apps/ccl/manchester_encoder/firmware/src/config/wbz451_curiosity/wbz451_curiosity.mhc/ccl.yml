@@ -25,6 +25,27 @@ children:
       children:
       - type: Dynamic
         attributes: {id: ccl, value: '336150562'}
+  - type: Hex
+    attributes: {id: CCL_LUTCTRL_REGVALUE1}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: ccl, value: '0'}
+  - type: Hex
+    attributes: {id: CCL_SEQCTRL_REGVALUE0}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: ccl, value: '0'}
+  - type: Hex
+    attributes: {id: CCL_SEQCTRL_REGVALUE1}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: ccl, value: '0'}
   - type: KeyValueSet
     attributes: {id: CTRL0__ENABLE}
     children:

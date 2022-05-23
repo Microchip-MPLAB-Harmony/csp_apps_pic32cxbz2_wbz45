@@ -58,18 +58,18 @@
 void GPIO_Initialize ( void )
 {
  
-    /* PORTA Initialization */
+          /* PORTA Initialization */
     /* PORTB Initialization */
-    GPIOB_REGS->GPIO_ANSELCLR = 0x6; /* Digital Mode Enable */
+    GPIOB_REGS->GPIO_ANSELCLR = 0x6U; /* Digital Mode Enable */
 
 
     /* PPS Input Remapping */
-    PPS_REGS->PPS_CCLIN1R = 4;
+    PPS_REGS->PPS_CCLIN1R = 4U;
 
     /* PPS Output Remapping */
-    PPS_REGS->PPS_RPA7G2R = 1;
-    PPS_REGS->PPS_RPA8G3R = 1;
-    PPS_REGS->PPS_RPB2G3R = 28;
+    PPS_REGS->PPS_RPA7G2R = 1U;
+    PPS_REGS->PPS_RPA8G3R = 1U;
+    PPS_REGS->PPS_RPB2G3R = 28U;
 
 
 }

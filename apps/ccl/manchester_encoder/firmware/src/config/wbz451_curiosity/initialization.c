@@ -140,7 +140,6 @@
 #pragma config DSWDTEN =      OFF
 #pragma config DSEN =    OFF
 #pragma config UVREGROVR =      CONTROLLED
-#pragma config LPOSCEN =      OFF
 #pragma config RTCNTM_CSEL =      RAW
 
 /*** FBCFG0 ***/
@@ -149,6 +148,7 @@
 
 /*** FCPN0 ***/
 #pragma config CP =      DISABLED
+
 
 
 
@@ -205,8 +205,9 @@ void SYS_Initialize ( void* data )
   
     CLK_Initialize();
     /* Configure Prefetch, Wait States */
-    PCHE_REGS->PCHE_CHECON = (PCHE_REGS->PCHE_CHECON & (~(PCHE_CHECON_PFMWS_Msk | PCHE_CHECON_ADRWS_Msk | PCHE_CHECON_PREFEN_Msk))) 
+    PCHE_REGS->PCHE_CHECON = (PCHE_REGS->PCHE_CHECON & (~(PCHE_CHECON_PFMWS_Msk | PCHE_CHECON_ADRWS_Msk | PCHE_CHECON_PREFEN_Msk)))
                                     | (PCHE_CHECON_PFMWS(1) | PCHE_CHECON_PREFEN(1));
+
 
 
 	GPIO_Initialize();
