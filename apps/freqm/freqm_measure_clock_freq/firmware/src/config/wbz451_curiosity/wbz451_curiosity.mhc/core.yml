@@ -180,13 +180,6 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '1'}
   - type: Combo
-    attributes: {id: CONFIG_LPOSCEN}
-    children:
-    - type: Values
-      children:
-      - type: User
-        attributes: {value: 'ON'}
-  - type: Combo
     attributes: {id: CONFIG_POSCMOD}
     children:
     - type: Values
@@ -557,6 +550,20 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: 'true'}
+  - type: Combo
+    attributes: {id: OSCCON_NOSC_VALUE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: SPLL}
+  - type: Hex
+    attributes: {id: OSCCON_VALUE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '256'}
   - type: Hex
     attributes: {id: PMD2_REG_VALUE}
     children:
@@ -1066,6 +1073,143 @@ children:
     children:
     - type: Attributes
       children:
+      - type: KeyValuePairList
+        attributes: {id: pairs}
+        children:
+        - type: Pairs
+          children:
+          - type: Pair
+            attributes: {description: QSPI_SCK (out), value: '23', key: QSPI_SCK (out)}
+          - type: Pair
+            attributes: {description: SERCOM3_PAD0 (out), value: '10', key: SERCOM3_PAD0
+                (out)}
+          - type: Pair
+            attributes: {description: SERCOM0_PAD0 (out), value: '3', key: SERCOM0_PAD0
+                (out)}
+          - type: Pair
+            attributes: {description: TC1_WO1 (out), value: '20', key: TC1_WO1 (out)}
+          - type: Pair
+            attributes: {description: TC2_WO0 (out), value: '21', key: TC2_WO0 (out)}
+          - type: Pair
+            attributes: {description: QSPI_DATA0 (in/out), value: '27', key: QSPI_DATA0
+                (in/out)}
+          - type: Pair
+            attributes: {description: SERCOM2_PAD2 (out), value: '7', key: SERCOM2_PAD2
+                (out)}
+          - type: Pair
+            attributes: {description: SERCOM0_PAD3 (out), value: '3', key: SERCOM0_PAD3
+                (out)}
+          - type: Pair
+            attributes: {description: TC3_WO0 (out), value: '22', key: TC3_WO0 (out)}
+          - type: Pair
+            attributes: {description: SERCOM1_PAD1 (out), value: '5', key: SERCOM1_PAD1
+                (out)}
+          - type: Pair
+            attributes: {description: TC2_WO1 (out), value: '21', key: TC2_WO1 (out)}
+          - type: Pair
+            attributes: {description: QSPI_DATA3 (in/out), value: '27', key: QSPI_DATA3
+                (in/out)}
+          - type: Pair
+            attributes: {description: QSPI_DATA2 (out), value: '25', key: QSPI_DATA2
+                (out)}
+          - type: Pair
+            attributes: {description: SERCOM1_PAD0 (out), value: '6', key: SERCOM1_PAD0
+                (out)}
+          - type: Pair
+            attributes: {description: SERCOM3_PAD3 (out), value: '9', key: SERCOM3_PAD3
+                (out)}
+          - type: Pair
+            attributes: {description: SERCOM0_PAD1 (out), value: '2', key: SERCOM0_PAD1
+                (out)}
+          - type: Pair
+            attributes: {description: SERCOM2_PAD0 (out), value: '8', key: SERCOM2_PAD0
+                (out)}
+          - type: Pair
+            attributes: {description: SERCOM2_PAD3 (out), value: '7', key: SERCOM2_PAD3
+                (out)}
+          - type: Pair
+            attributes: {description: TCC1_WO1, value: '15', key: TCC1_WO1}
+          - type: Pair
+            attributes: {description: TCC1_WO0, value: '15', key: TCC1_WO0}
+          - type: Pair
+            attributes: {description: QSPI_DATA3 (out), value: '27', key: QSPI_DATA3
+                (out)}
+          - type: Pair
+            attributes: {description: QSPI_CS (out), value: '24', key: QSPI_CS (out)}
+          - type: Pair
+            attributes: {description: QSPI_DATA2 (in/out), value: '27', key: QSPI_DATA2
+                (in/out)}
+          - type: Pair
+            attributes: {description: SERCOM1_PAD3 (out), value: '4', key: SERCOM1_PAD3
+                (out)}
+          - type: Pair
+            attributes: {description: TCC1_WO5, value: '16', key: TCC1_WO5}
+          - type: Pair
+            attributes: {description: TCC1_WO4, value: '16', key: TCC1_WO4}
+          - type: Pair
+            attributes: {description: TCC1_WO3, value: '14', key: TCC1_WO3}
+          - type: Pair
+            attributes: {description: TCC1_WO2, value: '14', key: TCC1_WO2}
+          - type: Pair
+            attributes: {description: TCC0_WO4, value: '13', key: TCC0_WO4}
+          - type: Pair
+            attributes: {description: TCC0_WO3, value: '11', key: TCC0_WO3}
+          - type: Pair
+            attributes: {description: SERCOM2_PAD1 (out), value: '7', key: SERCOM2_PAD1
+                (out)}
+          - type: Pair
+            attributes: {description: TCC0_WO5, value: '12', key: TCC0_WO5}
+          - type: Pair
+            attributes: {description: QSPI_DATA0 (out), value: '27', key: QSPI_DATA0
+                (out)}
+          - type: Pair
+            attributes: {description: REFO3, value: '19', key: REFO3}
+          - type: Pair
+            attributes: {description: REFO2, value: '19', key: REFO2}
+          - type: Pair
+            attributes: {description: REFO1, value: '19', key: REFO1}
+          - type: Pair
+            attributes: {description: TC0_WO0 (out), value: '18', key: TC0_WO0 (out)}
+          - type: Pair
+            attributes: {description: SERCOM3_PAD2 (out), value: '10', key: SERCOM3_PAD2
+                (out)}
+          - type: Pair
+            attributes: {description: REFO4, value: '19', key: REFO4}
+          - type: Pair
+            attributes: {description: TCC0_WO0, value: '12', key: TCC0_WO0}
+          - type: Pair
+            attributes: {description: TCC0_WO2, value: '11', key: TCC0_WO2}
+          - type: Pair
+            attributes: {description: TCC0_WO1, value: '12', key: TCC0_WO1}
+          - type: Pair
+            attributes: {description: SERCOM3_PAD1 (out), value: '10', key: SERCOM3_PAD1
+                (out)}
+          - type: Pair
+            attributes: {description: SERCOM1_PAD2 (out), value: '4', key: SERCOM1_PAD2
+                (out)}
+          - type: Pair
+            attributes: {description: QSPI_DATA1 (in/out), value: '27', key: QSPI_DATA1
+                (in/out)}
+          - type: Pair
+            attributes: {description: TC1_WO0 (out), value: '20', key: TC1_WO0 (out)}
+          - type: Pair
+            attributes: {description: TC0_WO1 (out), value: '18', key: TC0_WO1 (out)}
+          - type: Pair
+            attributes: {description: TCC2_WO0, value: '17', key: TCC2_WO0}
+          - type: Pair
+            attributes: {description: SERCOM0_PAD2 (out), value: '1', key: SERCOM0_PAD2
+                (out)}
+          - type: Pair
+            attributes: {description: CCL_OUT0, value: '28', key: CCL_OUT0}
+          - type: Pair
+            attributes: {description: CCL_OUT1, value: '28', key: CCL_OUT1}
+          - type: Pair
+            attributes: {description: QSPI_DATA1 (out), value: '26', key: QSPI_DATA1
+                (out)}
+          - type: Pair
+            attributes: {description: TCC2_WO1, value: '17', key: TCC2_WO1}
+          - type: Pair
+            attributes: {description: TC3_WO1 (out), value: '22', key: TC3_WO1 (out)}
       - type: Boolean
         attributes: {id: visible}
         children:
@@ -1121,7 +1265,7 @@ children:
           - type: Pair
             attributes: {description: RPA1G4R, value: RPA1G4R, key: RPA1}
           - type: Pair
-            attributes: {description: RPA2G4R, value: RPA2G1R, key: RPA2}
+            attributes: {description: RPA2G4R, value: RPA2G4R, key: RPA2}
           - type: Pair
             attributes: {description: RPA0G3R, value: RPA0G3R, key: RPA0}
           - type: Pair
