@@ -174,12 +174,47 @@ children:
         children:
         - {type: Value, value: 'true'}
   - type: Hex
+    attributes: {id: ADCHS_ADCCON1}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: adchs, value: '6291456'}
+  - type: Hex
     attributes: {id: ADCHS_ADCCON2}
     children:
     - type: Values
       children:
       - type: Dynamic
         attributes: {id: adchs, value: '131073'}
+  - type: Hex
+    attributes: {id: ADCHS_ADCCSS1}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: adchs, value: '0'}
+  - type: Hex
+    attributes: {id: ADCHS_ADCGIRQEN1}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: adchs, value: '0'}
+  - type: Hex
+    attributes: {id: ADCHS_ADCIMCON1}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: adchs, value: '0'}
+  - type: Hex
+    attributes: {id: ADCHS_ADCTRG1}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: adchs, value: '0'}
   - type: Hex
     attributes: {id: ADCHS_ADCTRG2}
     children:
@@ -263,6 +298,20 @@ children:
       children:
       - type: Dynamic
         attributes: {id: adchs, value: '941.17645'}
+  - type: String
+    attributes: {id: ADCHS_DMA_STATUS_REG}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: adchs, value: ADCDMASTAT}
+  - type: Boolean
+    attributes: {id: ADCHS_INTERRUPT}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: adchs, value: 'false'}
   - type: Float
     attributes: {id: ADCHS_TADC7}
     children:
@@ -283,6 +332,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: adchs, value: '15.625'}
+  - type: Float
+    attributes: {id: ADCHS_TQ}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: adchs, value: '31.25'}
   - type: Boolean
     attributes: {id: ADCIMCON1__DIFF5}
     children:
