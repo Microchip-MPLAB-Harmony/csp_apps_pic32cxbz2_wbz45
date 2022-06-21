@@ -1,0 +1,78 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.csp_apps_pic32cxbz2_wbz45_dmac_usart_echo",
+		"version": "3.0.0",
+		"displayName": "DMAC USART echo Example for PIC32CX-BZ2 Family",
+		"projectName": "dmac_usart_echo_wbz451_curiosity",
+		"shortDescription": "This example application demonstrates USART transfer with DMA to receive 10 bytes and echo back the received bytes.",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=6.00.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=4.1.0"
+			}
+		],
+		"dfp": {
+			"name": "PIC32CX-BZ_DFP",
+			"semverRange": "^1.0.107"
+		},
+		"configurator": {
+			"name": "MHC",
+			"semverRange": ">=3.8.0"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "WBZ451",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit",
+				"PIC32CX WBZ451 Curiosity Board"
+			],
+			[
+				"Harmony",
+				"Peripherals",
+				"DMAC"
+			],
+			[
+				"Peripherals",
+				"DMAC"
+			]
+		],
+		"peripherals": [
+			"DMAC"
+		],
+		"keywords": [
+			"MHC",
+			"Harmony",
+			"WBZ451",
+			"PIC32CX-BZ2 Family",
+			"DMA",
+			"DMA Controller"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}

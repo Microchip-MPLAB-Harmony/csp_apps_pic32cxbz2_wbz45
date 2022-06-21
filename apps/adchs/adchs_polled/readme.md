@@ -10,7 +10,7 @@ In this application, an analog input is converted by a software edge trigger. Co
 
 ## Downloading and building the application
 
-To download or clone this application from Github, go to the [top level of the repository](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32cx_bz24_bz25) and click
+To download or clone this application from Github, go to the [top level of the repository](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32cxbz2_wbz45) and click
 
 ![clone](../../../docs/images/clone.png)
 
@@ -20,7 +20,7 @@ To build the application, refer to the following table and open the project usin
 
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
-| wbz451_curiosity.X | MPLABX project for [PIC32CX WBZ451 Curiosity Board]() |
+| wbz451_curiosity.X | MPLABX project for [PIC32CX WBZ451 Curiosity Board](https://www.microchip.com/en-us/development-tool/EA71C53A) |
 |||
 
 ## Setting up the hardware
@@ -29,10 +29,10 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-| wbz451_curiosity.X | [PIC32CX WBZ451 Curiosity Board]() |
+| wbz451_curiosity.X | [PIC32CX WBZ451 Curiosity Board](https://www.microchip.com/en-us/development-tool/EA71C53A) |
 |||
 
-### Setting up [PIC32CX WBZ451 Curiosity Board]()
+### Setting up [PIC32CX WBZ451 Curiosity Board](https://www.microchip.com/en-us/development-tool/EA71C53A)
 
 - Connect the AN5 pin RB1 (Pin 1 of the mikroBus connector) to the Vcc (Pin 7 of the mikroBus connector)
 - Connect the Debug USB port on the board to the computer using a micro USB cable

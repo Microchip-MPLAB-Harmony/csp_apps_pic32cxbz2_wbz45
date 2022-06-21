@@ -22,7 +22,7 @@ To run the application, two evaluation kits will be required - one acting as the
 
 ## Downloading and building the application
 
-To clone or download this application from Github, go to the [main page of this repository](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32cx_bz24_bz25) and then click **Clone** button to clone this repository or download as zip file.
+To clone or download this application from Github, go to the [main page of this repository](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32cxbz2_wbz45) and then click **Clone** button to clone this repository or download as zip file.
 This content can also be downloaded using content manager by following these [instructions](https://github.com/Microchip-MPLAB-Harmony/contentmanager/wiki).
 
 Path of the application within the repository is **apps/sercom/i2c/slave/i2c_eeprom_emulation/firmware** .
@@ -31,7 +31,7 @@ To build the application, refer to the following table and open the project usin
 
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
-|wbz451_curiosity.X| MPLABX project for [PIC32CX WBZ451 Curiosity Board](https://www.microchip.com/developmenttools/ProductDetails/)|
+|wbz451_curiosity.X| MPLABX project for [PIC32CX WBZ451 Curiosity Board](https://www.microchip.com/en-us/development-tool/EA71C53A)|
 
 
 ## Setting up the hardware
@@ -40,13 +40,13 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-|wbz451_curiosity.X|[PIC32CX WBZ451 Curiosity Board](https://www.microchip.com/developmenttools/ProductDetails/)|
+|wbz451_curiosity.X|[PIC32CX WBZ451 Curiosity Board](https://www.microchip.com/en-us/development-tool/EA71C53A)|
 
 Hardware setup requires two boards, one acting as the I2C Master and the other as the I2C slave.
 
 *Note: The I2C master demo - i2c_eeprom on the SAM E54 Xplained Pro uses the on-board EEPROM and hence cannot be used as is with this I2C slave application*
 
-### Setting up [PIC32CX WBZ451 Curiosity Board](https://www.microchip.com/developmenttools/ProductDetails/)
+### Setting up [PIC32CX WBZ451 Curiosity Board](https://www.microchip.com/en-us/development-tool/EA71C53A)
 - Connect I2C SDA line and I2C SCL line on mikrobus socket of the curiosity board with the corresponding SDA and SCL lines of the I2C master
 - Connect a ground wire from the curiosity board to the ground of the I2C master
 - Connect the Debug USB port on the board to the computer using a micro USB cable

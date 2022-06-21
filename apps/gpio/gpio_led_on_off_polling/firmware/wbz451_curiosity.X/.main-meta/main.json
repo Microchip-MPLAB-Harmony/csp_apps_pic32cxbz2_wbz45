@@ -1,0 +1,81 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.csp_apps_pic32cxbz2_wbz45_gpio_led_on_off_polling",
+		"version": "3.0.0",
+		"displayName": "GPIO Polling Example for PIC32CX-BZ2 Family",
+		"projectName": "gpio_led_on_off_polling_wbz451_curiosity",
+		"shortDescription": "This example application demonstrate how to poll the switch input, and indicate the switch status using the LED.",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=6.00.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=4.1.0"
+			}
+		],
+		"dfp": {
+			"name": "PIC32CX-BZ_DFP",
+			"semverRange": "^1.0.107"
+		},
+		"configurator": {
+			"name": "MHC",
+			"semverRange": ">=3.8.0"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "WBZ451",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit",
+				"PIC32CX WBZ451 Curiosity Board"
+			],
+			[
+				"Harmony",
+				"Peripherals",
+				"GPIO"
+			],
+			[
+				"Peripherals",
+				"GPIO"
+			]
+		],
+		"peripherals": [
+			"GPIO"
+		],
+		"keywords": [
+			"MHC",
+			"Harmony",
+			"WBZ451",
+			"PIC32CX-BZ2 Family",
+			"GPIO",
+			"PORT",
+			"PIO",
+			"I/O",
+			"Pin"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}

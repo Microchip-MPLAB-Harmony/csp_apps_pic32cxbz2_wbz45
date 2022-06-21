@@ -10,7 +10,7 @@ Single shot conversion is triggered by RTC compare event. Generation of a trigge
 
 ## Downloading and building the application
 
-To download or clone this application from Github, go to the [top level of the repository](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32cx_bz24_bz25) and click
+To download or clone this application from Github, go to the [top level of the repository](https://github.com/Microchip-MPLAB-Harmony/csp_apps_pic32cxbz2_wbz45) and click
 
 ![clone](../../../docs/images/clone.png)
 
@@ -20,7 +20,7 @@ To build the application, refer to the following table and open the project usin
 
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
-| wbz451_curiosity.X    | MPLABX Project for [PIC32CX WBZ451 Curiosity Board]()|
+| wbz451_curiosity.X    | MPLABX Project for [PIC32CX WBZ451 Curiosity Board](https://www.microchip.com/en-us/development-tool/EA71C53A)|
 |||
 
 ## Setting up the hardware
@@ -29,10 +29,10 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-| wbz451_curiosity.X    | [PIC32CX WBZ451 Curiosity Board]()|
+| wbz451_curiosity.X    | [PIC32CX WBZ451 Curiosity Board](https://www.microchip.com/en-us/development-tool/EA71C53A)|
 |||
 
-### Setting up [PIC32CX WBZ451 Curiosity Board]()
+### Setting up [PIC32CX WBZ451 Curiosity Board](https://www.microchip.com/en-us/development-tool/EA71C53A)
 
 - Connect a voltage below VDD to AC-AIN0 (pin 2 of the mikroBus connector)
 - Connect the Debug USB port on the board to the computer using a micro USB cable
@@ -58,5 +58,5 @@ Below table shows the AC input pin and LED name for the board:
 
 | Board| AC input pin | LED name|
 |------|----------|---------|
-|[PIC32CX WBZ451 Curiosity Board]()| AC-AIN0 (pin 2 of the mikroBus connector)| Red LED |
+|[PIC32CX WBZ451 Curiosity Board](https://www.microchip.com/en-us/development-tool/EA71C53A)| AC-AIN0 (pin 2 of the mikroBus connector)| Red LED |
 |||
