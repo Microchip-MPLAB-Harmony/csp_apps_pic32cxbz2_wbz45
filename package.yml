@@ -1,6 +1,6 @@
 package:
   format-version: "1.0.0"
-  name: "csp_apps_pic32cx_bz24_bz25"
+  name: "csp_apps_pic32cxbz2_wbz45"
   version: "v3.0.0"
   type: "application"
   status: "production"
