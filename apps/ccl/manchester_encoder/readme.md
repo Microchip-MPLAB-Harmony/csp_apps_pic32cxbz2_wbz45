@@ -1,3 +1,10 @@
+---
+parent: Harmony 3 peripheral library application examples for PIC32CX-BZ2 and WBZ451 family
+title: CCL Manchester Encoder
+has_children: false
+has_toc: false
+---
+
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
 # CCL Manchester Encoder
@@ -48,7 +55,6 @@ The following table shows the target hardware for the application projects.
     |Board| MOSI pin | SCK pin  | CCL_OUT pin |
     |-----|----------|----------|-------------|
     | [PIC32CX WBZ451 Curiosity Board](https://www.microchip.com/en-us/development-tool/EA71C53A) | RA7 | RA8 | RB2 (RST pin on mikrobus socket) |
-    ||||
 
 5. Build and Program the application using its IDE
 6. Observe the output on logic analyzer, it should follow the truth table as shown in the following diagram:

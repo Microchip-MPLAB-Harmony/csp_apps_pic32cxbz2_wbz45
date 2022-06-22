@@ -1,3 +1,10 @@
+---
+parent: Harmony 3 peripheral library application examples for PIC32CX-BZ2 and WBZ451 family
+title: SERCOM SPI EEPROM read write
+has_children: false
+has_toc: false
+---
+
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
 # SERCOM SPI EEPROM read write
