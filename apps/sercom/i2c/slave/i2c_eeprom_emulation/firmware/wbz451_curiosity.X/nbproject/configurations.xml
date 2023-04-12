@@ -1,27 +1,29 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <configurationDescriptor version="65">
-  <logicalFolder displayName="root" name="root" projectFiles="true">
-    <logicalFolder displayName="Header Files" name="HeaderFiles" projectFiles="true">
-      <logicalFolder displayName="config" name="f1" projectFiles="true">
-        <logicalFolder displayName="wbz451_curiosity" name="f1" projectFiles="true">
-          <logicalFolder displayName="peripheral" name="f1" projectFiles="true">
-            <logicalFolder displayName="clk" name="f1" projectFiles="true">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="config" projectFiles="true">
+        <logicalFolder name="f1" displayName="wbz451_curiosity" projectFiles="true">
+          <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
+            <logicalFolder name="f1" displayName="clk" projectFiles="true">
               <itemPath>../src/config/wbz451_curiosity/peripheral/clk/plib_clk.h</itemPath>
             </logicalFolder>
-            <logicalFolder displayName="cmcc" name="f2" projectFiles="true">
+            <logicalFolder name="f2" displayName="cmcc" projectFiles="true">
               <itemPath>../src/config/wbz451_curiosity/peripheral/cmcc/plib_cmcc.h</itemPath>
             </logicalFolder>
-            <logicalFolder displayName="evsys" name="f3" projectFiles="true">
+            <logicalFolder name="f3" displayName="evsys" projectFiles="true">
               <itemPath>../src/config/wbz451_curiosity/peripheral/evsys/plib_evsys.h</itemPath>
             </logicalFolder>
-            <logicalFolder displayName="gpio" name="f4" projectFiles="true">
+            <logicalFolder name="f4" displayName="gpio" projectFiles="true">
               <itemPath>../src/config/wbz451_curiosity/peripheral/gpio/plib_gpio.h</itemPath>
             </logicalFolder>
-            <logicalFolder displayName="nvic" name="f5" projectFiles="true">
+            <logicalFolder name="f5" displayName="nvic" projectFiles="true">
               <itemPath>../src/config/wbz451_curiosity/peripheral/nvic/plib_nvic.h</itemPath>
             </logicalFolder>
-            <logicalFolder displayName="sercom" name="f6" projectFiles="true">
-              <logicalFolder displayName="i2c_slave" name="f1" projectFiles="true">
+            <logicalFolder name="f6" displayName="sercom" projectFiles="true">
+              <logicalFolder name="f1" displayName="i2c_slave" projectFiles="true">
                 <itemPath>../src/config/wbz451_curiosity/peripheral/sercom/i2c_slave/plib_sercom_i2c_slave_common.h</itemPath>
                 <itemPath>../src/config/wbz451_curiosity/peripheral/sercom/i2c_slave/plib_sercom2_i2c_slave.h</itemPath>
               </logicalFolder>
@@ -35,11 +37,11 @@
           <itemPath>../src/config/wbz451_curiosity/device_vectors.h</itemPath>
         </logicalFolder>
       </logicalFolder>
-      <logicalFolder displayName="packs" name="f2" projectFiles="true">
-        <logicalFolder displayName="CMSIS" name="f1" projectFiles="true">
-          <logicalFolder displayName="CMSIS" name="f1" projectFiles="true">
-            <logicalFolder displayName="Core" name="f1" projectFiles="true">
-              <logicalFolder displayName="Include" name="f1" projectFiles="true">
+      <logicalFolder name="f2" displayName="packs" projectFiles="true">
+        <logicalFolder name="f1" displayName="CMSIS" projectFiles="true">
+          <logicalFolder name="f1" displayName="CMSIS" projectFiles="true">
+            <logicalFolder name="f1" displayName="Core" projectFiles="true">
+              <logicalFolder name="f1" displayName="Include" projectFiles="true">
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_version.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_iccarm.h</itemPath>
@@ -54,8 +56,8 @@
             </logicalFolder>
           </logicalFolder>
         </logicalFolder>
-        <logicalFolder displayName="WBZ451_DFP" name="f2" projectFiles="true">
-          <logicalFolder displayName="component" name="f1" projectFiles="true">
+        <logicalFolder name="f2" displayName="WBZ451_DFP" projectFiles="true">
+          <logicalFolder name="f1" displayName="component" projectFiles="true">
             <itemPath>../src/packs/WBZ451_DFP/component/ac.h</itemPath>
             <itemPath>../src/packs/WBZ451_DFP/component/adchs.h</itemPath>
             <itemPath>../src/packs/WBZ451_DFP/component/aes.h</itemPath>
@@ -95,7 +97,7 @@
             <itemPath>../src/packs/WBZ451_DFP/component/wdt.h</itemPath>
             <itemPath>../src/packs/WBZ451_DFP/component/zigbee.h</itemPath>
           </logicalFolder>
-          <logicalFolder displayName="instance" name="f2" projectFiles="true">
+          <logicalFolder name="f2" displayName="instance" projectFiles="true">
             <itemPath>../src/packs/WBZ451_DFP/instance/ac.h</itemPath>
             <itemPath>../src/packs/WBZ451_DFP/instance/adchs.h</itemPath>
             <itemPath>../src/packs/WBZ451_DFP/instance/aes.h</itemPath>
@@ -143,59 +145,17 @@
             <itemPath>../src/packs/WBZ451_DFP/instance/wdt.h</itemPath>
             <itemPath>../src/packs/WBZ451_DFP/instance/zigbee.h</itemPath>
           </logicalFolder>
-          <logicalFolder displayName="pio" name="f3" projectFiles="true">
+          <logicalFolder name="f3" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/WBZ451_DFP/pio/wbz451.h</itemPath>
           </logicalFolder>
           <itemPath>../src/packs/WBZ451_DFP/wbz451.h</itemPath>
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
-    <logicalFolder displayName="Linker Files" name="LinkerScript" projectFiles="true">
-      <logicalFolder displayName="config" name="f1" projectFiles="true">
-        <logicalFolder displayName="wbz451_curiosity" name="f1" projectFiles="true">
-          <itemPath>../src/config/wbz451_curiosity/WBZ451.ld</itemPath>
-        </logicalFolder>
-      </logicalFolder>
-    </logicalFolder>
-    <logicalFolder displayName="Source Files" name="SourceFiles" projectFiles="true">
-      <logicalFolder displayName="config" name="f1" projectFiles="true">
-        <logicalFolder displayName="wbz451_curiosity" name="f1" projectFiles="true">
-          <logicalFolder displayName="peripheral" name="f1" projectFiles="true">
-            <logicalFolder displayName="clk" name="f1" projectFiles="true">
-              <itemPath>../src/config/wbz451_curiosity/peripheral/clk/plib_clk.c</itemPath>
-            </logicalFolder>
-            <logicalFolder displayName="cmcc" name="f2" projectFiles="true">
-              <itemPath>../src/config/wbz451_curiosity/peripheral/cmcc/plib_cmcc.c</itemPath>
-            </logicalFolder>
-            <logicalFolder displayName="evsys" name="f3" projectFiles="true">
-              <itemPath>../src/config/wbz451_curiosity/peripheral/evsys/plib_evsys.c</itemPath>
-            </logicalFolder>
-            <logicalFolder displayName="gpio" name="f4" projectFiles="true">
-              <itemPath>../src/config/wbz451_curiosity/peripheral/gpio/plib_gpio.c</itemPath>
-            </logicalFolder>
-            <logicalFolder displayName="nvic" name="f5" projectFiles="true">
-              <itemPath>../src/config/wbz451_curiosity/peripheral/nvic/plib_nvic.c</itemPath>
-            </logicalFolder>
-            <logicalFolder displayName="sercom" name="f6" projectFiles="true">
-              <logicalFolder displayName="i2c_slave" name="f1" projectFiles="true">
-                <itemPath>../src/config/wbz451_curiosity/peripheral/sercom/i2c_slave/plib_sercom2_i2c_slave.c</itemPath>
-              </logicalFolder>
-            </logicalFolder>
-          </logicalFolder>
-          <logicalFolder displayName="stdio" name="f2" projectFiles="true">
-            <itemPath>../src/config/wbz451_curiosity/stdio/xc32_monitor.c</itemPath>
-          </logicalFolder>
-          <itemPath>../src/config/wbz451_curiosity/initialization.c</itemPath>
-          <itemPath>../src/config/wbz451_curiosity/interrupts.c</itemPath>
-          <itemPath>../src/config/wbz451_curiosity/exceptions.c</itemPath>
-          <itemPath>../src/config/wbz451_curiosity/startup_xc32.c</itemPath>
-          <itemPath>../src/config/wbz451_curiosity/libc_syscalls.c</itemPath>
-        </logicalFolder>
-      </logicalFolder>
-      <itemPath>../src/main.c</itemPath>
-    </logicalFolder>
-    <logicalFolder displayName="Important Files" name="ExternalFiles" projectFiles="true">
-      <logicalFolder displayName="wbz451_curiosity.mhc" name="f1" projectFiles="true">
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="wbz451_curiosity.mhc" projectFiles="true">
         <itemPath>../src/config/wbz451_curiosity/wbz451_curiosity.mhc/cmsis.yml</itemPath>
         <itemPath>../src/config/wbz451_curiosity/wbz451_curiosity.mhc/core.yml</itemPath>
         <itemPath>../src/config/wbz451_curiosity/wbz451_curiosity.mhc/dfp.yml</itemPath>
@@ -209,6 +169,54 @@
       <itemPath>../src/config/wbz451_curiosity/harmony-manifest-success.yml</itemPath>
       <itemPath>i2c_eeprom_emulation_wbz451_curiosity.mc3</itemPath>
     </logicalFolder>
+    <logicalFolder name="LinkerScript"
+                   displayName="Linker Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="config" projectFiles="true">
+        <logicalFolder name="f1" displayName="wbz451_curiosity" projectFiles="true">
+          <itemPath>../src/config/wbz451_curiosity/WBZ451.ld</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="config" projectFiles="true">
+        <logicalFolder name="f1" displayName="wbz451_curiosity" projectFiles="true">
+          <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
+            <logicalFolder name="f1" displayName="clk" projectFiles="true">
+              <itemPath>../src/config/wbz451_curiosity/peripheral/clk/plib_clk.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f2" displayName="cmcc" projectFiles="true">
+              <itemPath>../src/config/wbz451_curiosity/peripheral/cmcc/plib_cmcc.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f3" displayName="evsys" projectFiles="true">
+              <itemPath>../src/config/wbz451_curiosity/peripheral/evsys/plib_evsys.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f4" displayName="gpio" projectFiles="true">
+              <itemPath>../src/config/wbz451_curiosity/peripheral/gpio/plib_gpio.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f5" displayName="nvic" projectFiles="true">
+              <itemPath>../src/config/wbz451_curiosity/peripheral/nvic/plib_nvic.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f6" displayName="sercom" projectFiles="true">
+              <logicalFolder name="f1" displayName="i2c_slave" projectFiles="true">
+                <itemPath>../src/config/wbz451_curiosity/peripheral/sercom/i2c_slave/plib_sercom2_i2c_slave.c</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f2" displayName="stdio" projectFiles="true">
+            <itemPath>../src/config/wbz451_curiosity/stdio/xc32_monitor.c</itemPath>
+          </logicalFolder>
+          <itemPath>../src/config/wbz451_curiosity/initialization.c</itemPath>
+          <itemPath>../src/config/wbz451_curiosity/interrupts.c</itemPath>
+          <itemPath>../src/config/wbz451_curiosity/exceptions.c</itemPath>
+          <itemPath>../src/config/wbz451_curiosity/startup_xc32.c</itemPath>
+          <itemPath>../src/config/wbz451_curiosity/libc_syscalls.c</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <itemPath>../src/main.c</itemPath>
+    </logicalFolder>
   </logicalFolder>
   <sourceRootList>
     <Elem>../src</Elem>
@@ -219,16 +227,16 @@
       <toolsSet>
         <developmentServer>localhost</developmentServer>
         <targetDevice>WBZ451</targetDevice>
-        <targetHeader/>
-        <targetPluginBoard/>
+        <targetHeader></targetHeader>
+        <targetPluginBoard></targetPluginBoard>
         <platformTool>noID</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>3.01</languageToolchainVersion>
+        <languageToolchainVersion>4.21</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
-        <pack name="PIC32CX-BZ_DFP" vendor="Microchip" version="1.0.80"/>
+        <pack name="PIC32CX-BZ_DFP" vendor="Microchip" version="1.2.221"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -242,7 +250,7 @@
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
           <parseOnProdLoad>false</parseOnProdLoad>
-          <alternateLoadableFile/>
+          <alternateLoadableFile></alternateLoadableFile>
         </loading>
         <subordinates>
         </subordinates>
@@ -250,9 +258,9 @@
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
         <makeUseCleanTarget>false</makeUseCleanTarget>
-        <makeCustomizationPreStep/>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
         <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
-        <makeCustomizationPostStep/>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
         <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
@@ -265,7 +273,8 @@
         <property key="enable-symbols" value="true"/>
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories" value="../src;../src/config/wbz451_curiosity;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/WBZ451_DFP"/>
+        <property key="extra-include-directories"
+                  value="../src;../src/config/wbz451_curiosity;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/WBZ451_DFP"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -362,7 +371,8 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories" value="../src;../src/config/wbz451_curiosity;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/WBZ451_DFP"/>
+        <property key="extra-include-directories"
+                  value="../src;../src/config/wbz451_curiosity;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/WBZ451_DFP"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -424,7 +434,8 @@
         <property key="TIMER3" value="true"/>
         <property key="TIMER4" value="true"/>
         <property key="TIMER5" value="true"/>
-        <property key="ToolFirmwareFilePath" value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareFilePath"
+                  value="Press to browse for a specific firmware version"/>
         <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
         <property key="UART1" value="true"/>
         <property key="UART2" value="true"/>
@@ -484,10 +495,13 @@
         <property key="TIMER3" value="true"/>
         <property key="TIMER4" value="true"/>
         <property key="TIMER5" value="true"/>
-        <property key="ToolFirmwareFilePath" value="Press to browse for a specific firmware version"/>
-        <property key="ToolFirmwareOption.UpdateOptions" value="ToolFirmwareOption.UseLatest"/>
+        <property key="ToolFirmwareFilePath"
+                  value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UpdateOptions"
+                  value="ToolFirmwareOption.UseLatest"/>
         <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
-        <property key="ToolFirmwareToolPack" value="Press to select which tool pack to use"/>
+        <property key="ToolFirmwareToolPack"
+                  value="Press to select which tool pack to use"/>
         <property key="UART1" value="true"/>
         <property key="UART2" value="true"/>
         <property key="communication.interface" value="swd"/>
@@ -506,7 +520,8 @@
         <property key="memories.exclude.configurationmemory" value="true"/>
         <property key="memories.flashdata" value="true"/>
         <property key="memories.id" value="true"/>
-        <property key="memories.instruction.ram.ranges" value="${memories.instruction.ram.ranges}"/>
+        <property key="memories.instruction.ram.ranges"
+                  value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.end" value="0x1d003fff"/>
         <property key="memories.programmemory.ranges" value="1000000-10fffff"/>
@@ -519,7 +534,8 @@
         <property key="programoptions.pgmentry.voltage" value="low"/>
         <property key="programoptions.pgmspeed" value="Med"/>
         <property key="programoptions.preservedataflash" value="false"/>
-        <property key="programoptions.preservedataflash.ranges" value="${memories.dataflash.default}"/>
+        <property key="programoptions.preservedataflash.ranges"
+                  value="${memories.dataflash.default}"/>
         <property key="programoptions.preserveeeprom" value="false"/>
         <property key="programoptions.preserveeeprom.ranges" value=""/>
         <property key="programoptions.preserveprogram.ranges" value=""/>
@@ -532,15 +548,20 @@
         <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
         <property key="programoptions.usehighvoltageonmclr" value="false"/>
         <property key="programoptions.uselvpprogramming" value="false"/>
-        <property key="toolpack.updateoptions" value="toolpack.updateoptions.uselatestoolpack"/>
-        <property key="toolpack.updateoptions.packversion" value="Press to select which tool pack to use"/>
+        <property key="toolpack.updateoptions"
+                  value="toolpack.updateoptions.uselatestoolpack"/>
+        <property key="toolpack.updateoptions.packversion"
+                  value="Press to select which tool pack to use"/>
         <property key="voltagevalue" value="3.25"/>
       </Tool>
       <snap>
         <property key="AutoSelectMemRanges" value="auto"/>
-        <property key="ToolFirmwareFilePath" value="Press to browse for a specific firmware version"/>
-        <property key="ToolFirmwareOption.UpdateOptions" value="ToolFirmwareOption.UseLatest"/>
-        <property key="ToolFirmwareToolPack" value="Press to select which tool pack to use"/>
+        <property key="ToolFirmwareFilePath"
+                  value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UpdateOptions"
+                  value="ToolFirmwareOption.UseLatest"/>
+        <property key="ToolFirmwareToolPack"
+                  value="Press to select which tool pack to use"/>
         <property key="communication.interface" value="swd"/>
         <property key="communication.interface.jtag" value="2wire"/>
         <property key="communication.speed" value="2.000"/>
@@ -556,7 +577,8 @@
         <property key="memories.exclude.configurationmemory" value="true"/>
         <property key="memories.flashdata" value="true"/>
         <property key="memories.id" value="true"/>
-        <property key="memories.instruction.ram.ranges" value="${memories.instruction.ram.ranges}"/>
+        <property key="memories.instruction.ram.ranges"
+                  value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="1000000-10fffff"/>
         <property key="memories.rww" value="true"/>
@@ -565,7 +587,8 @@
         <property key="programoptions.pgmentry.voltage" value="low"/>
         <property key="programoptions.pgmspeed" value="Med"/>
         <property key="programoptions.preservedataflash" value="false"/>
-        <property key="programoptions.preservedataflash.ranges" value="${memories.dataflash.default}"/>
+        <property key="programoptions.preservedataflash.ranges"
+                  value="${memories.dataflash.default}"/>
         <property key="programoptions.preserveeeprom" value="false"/>
         <property key="programoptions.preserveeeprom.ranges" value=""/>
         <property key="programoptions.preserveprogram.ranges" value=""/>
@@ -573,8 +596,10 @@
         <property key="programoptions.programcalmem" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
         <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
-        <property key="toolpack.updateoptions" value="toolpack.updateoptions.uselatestoolpack"/>
-        <property key="toolpack.updateoptions.packversion" value="Press to select which tool pack to use"/>
+        <property key="toolpack.updateoptions"
+                  value="toolpack.updateoptions.uselatestoolpack"/>
+        <property key="toolpack.updateoptions.packversion"
+                  value="Press to select which tool pack to use"/>
       </snap>
     </conf>
   </confs>
