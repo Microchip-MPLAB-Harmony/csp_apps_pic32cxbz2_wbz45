@@ -1535,8 +1535,8 @@ data:
   userData:
     children:
     - attributes:
-        canvasHeight: '0'
-        canvasWidth: '0'
+        canvasHeight: '286'
+        canvasWidth: '709'
       type: GraphSettings
     - children:
       - attributes:
